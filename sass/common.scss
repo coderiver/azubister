@@ -1,0 +1,264 @@
+@import "base";
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
+body {	
+	min-width: 320px;
+	font: {
+	    family: Arial,sans-serif;
+	    weight: normal;
+	    size: 14px;
+	  	}
+	line-height:1.2;
+}
+/*resets*/
+a img, fieldset {
+	border:none;
+}
+a {
+	color: #37559a;
+	text-decoration:none;
+}
+li {
+	list-style: none;
+}
+input, textarea, button {
+	border: none;
+	outline: none;
+}
+button {
+	cursor: pointer;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+/*wrap*/
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+/*header*/
+.header-out {
+	position: relative;
+	width: 100%;
+	background: #37559a;
+	@include background-image(linear-gradient(#37559a, #283d70));	
+}
+.header {
+	position: relative;
+	width: 1000px;
+	height: 50px;
+	margin: 0 auto;
+	@include transition();
+	@include respond-to(step1) {
+		width: 100%;
+	}
+}
+.logo {
+	float: left;
+	margin-right: 53px;
+	@include sized-sprite($icons, logo);
+	a {
+		display: block;
+		width: 172px;
+		height: 50px;
+		font-size: 0;
+		line-height: 0;
+		color: transparent;
+		text-shadow: none;
+	}
+	@include transition();
+	@include respond-to(step1) {
+		margin: 0 12px 0 10px;
+	}
+}
+.nav {
+	float: left;
+	margin-top: 7px;
+	@include respond-to(step3) {
+		display: none;
+	}
+	li {
+		float: left;
+		height: 43px;	
+		@include border-radius(3px 3px 0 0);		
+		&.active {
+			margin-left: -1px;
+			background: #fff;
+			a {
+				padding: 0 18px 0 19px;
+				color: #37559a;
+			}			
+		}	
+		&:first-child {
+			a {
+				border: none;
+			}
+		}
+	}
+	a {
+		display: block;
+		height: 23px;
+		margin-top: 6px;
+		padding: 0 18px;
+		line-height: 23px;
+		border-left: 1px dotted #fff;
+		font-size: 14px;
+		color: #fff;
+		font-weight: bold;			
+		@include respond-to(step1) {
+			font-size: 12px;
+		}
+	}	
+	.nav__search {
+		display: none;
+		@include respond-to(step2) {
+			display: block;
+		}
+		a {
+			position: relative;
+			padding: 0 0 0 38px;
+			i {
+				position: absolute;
+				top: 4px;
+				left: 15px;
+				@include sized-sprite($icons, search);
+			}
+		}		
+	}
+}
+.nav-s {
+	display: none;
+	@include respond-to(step3) {
+		display: block;
+	}
+	float: right;
+	margin: 6px 10px 0 0;
+	li {
+		position: relative;
+		float: left;
+		width: 56px;
+		height: 44px;
+		@include border-radius(3px 3px 0 0);	
+		cursor: pointer;		
+		span {
+			display: block;
+			margin-top: 27px;
+			font-size: 10px;
+			text-align: center;
+			color: #fff;
+		}
+		i {
+			position: absolute;
+			top: 5px;
+			left: 18px;
+		}
+		.nav-s__menu-pic {
+				@include sized-sprite($icons, menu);
+		}
+		.nav-s__search-pic {
+			@include sized-sprite($icons, search-b);
+		}
+		&.active {
+			background: #fff;
+			span {
+				color: #37559a;
+			}			
+			.nav-s__menu-pic {
+				@include sized-sprite($icons, menu1);
+			}
+			.nav-s__search-pic {
+				@include sized-sprite($icons, search-b1);
+			}
+		}
+	}
+}
+.menu-drop {
+	display: none;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	background: #fff;
+	@include box-shadow(rgba(0,0,0,0.3) 0px 2px 4px);
+	li {
+		width: auto;
+		margin: 0 10px; 
+		border-top: 1px dotted #cfcfcf;
+		&:first-child {
+			border: none;
+		}
+	}
+	a {
+		height: 27px;
+		line-height: 27px;
+		font-weight: bold;
+	}
+}
+.search-drop {
+	display: none;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	background: #fff;
+	@include box-shadow(rgba(0,0,0,0.3) 0px 2px 4px);
+	form {
+		position: relative;
+		margin: 13px 10px 15px 10px;
+		overflow: hidden;
+		input, button {			
+			height: 23px;
+		}
+		input {
+			float: left;
+			width: 85%;
+			padding-left: 3%;
+			@include border-radius(5px 0 0 5px);
+			@include box-shadow(rgba(0,0,0,0.5) 0px 0px 5px inset);
+		}
+		button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 20%;
+			background: #22B5F4;
+			@include border-radius(0 5px 5px 0);
+			line-height: 1;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+}
+.search {
+	float: right;
+	margin-top: 13px;
+	width: 222px;
+	@include respond-to(step1) {
+		margin-right: 10px;
+	}
+	@include respond-to(step2) {
+		display: none;
+	}
+	@include respond-to(step3) {
+		display: none;
+	}
+	input, button {
+		float: left;
+		height: 23px;
+	}
+	input {
+		width: 176px;
+		padding: 0 10px;
+		background: #fff;
+		@include border-radius(5px 0 0 5px);
+	}
+	button {
+		width: 26px;
+		background: #22b5f4;
+		@include border-radius(0 5px 5px 0);
+		i {
+			margin: 4px 0 0 5px;
+			display: block;
+			@include sized-sprite($icons, search);
+		}
+	}
+}
+
