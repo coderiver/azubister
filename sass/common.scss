@@ -476,3 +476,41 @@ table {
 		bottom: 30px;
 	}
 }
+.likes {
+	position: relative;
+	.likes__out {
+		position: absolute;
+		top: 0;
+		left: -100px;
+		width: 80px;
+		height: 400px;
+		.likes__mail {
+			a {
+				display: block;
+				width: 75px;
+				height: 20px;
+				@include sized-sprite($icons, mail);
+				&:hover {
+					@include sized-sprite($icons, mail-h);
+				}
+			}
+		}
+	}
+	.likes__ins {
+		overflow: hidden;
+		.likes__twitter, .likes__google, .likes__mail, .fb-like {
+			float: left;
+		}
+		.likes__mail {
+			a {
+				display: block;
+				width: 75px;
+				height: 20px;
+				@include sized-sprite($icons, mail);
+				&:hover {
+					@include sized-sprite($icons, mail-h);
+				}
+			}
+		}
+	}
+}

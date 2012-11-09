@@ -40,8 +40,10 @@
 	<div class="likes">
 		<div class="likes__out">
 			<!-- twitter -->
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com/pages/tweet_button" data-via="your_screen_name" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="likes__twitter">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com/pages/tweet_button" data-via="your_screen_name" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 			<!-- facebook -->
 			<div class="fb-like" data-send="true" data-layout="box_count" data-width="200" data-show-faces="false" data-action="recommend"></div>
 			<div id="fb-root"></div>
@@ -49,30 +51,35 @@
 			  var js, fjs = d.getElementsByTagName(s)[0];
 			  if (d.getElementById(id)) return;
 			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/uk_UA/all.js#xfbml=1";
+			  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
 			<!-- google -->
-			<g:plusone></g:plusone>
-	    <script type="text/javascript">
-		  window.___gcfg = {
-		    lang: 'de'
-		      };
+			<div class="likes__google">		
+				<g:plusone></g:plusone>
+		    <script type="text/javascript">
+			  window.___gcfg = {
+			    lang: 'de'
+			      };
 
-		      (function() {
-		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		    po.src = 'https://apis.google.com/js/plusone.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		  })();
-	    </script>
+			      (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/plusone.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+		    </script>
+		  </div>
 	    <!-- mail -->
-	    <div><a href="mailto:?subject=http://www.azubister.net/magazin&amp;body=Hi,%0a%0a
-			toller Beitrag auf azubister:%0ahttp://www.azubister.net/magazin"><img style="float: left; width: auto; margin-right: 5px;" src="http://www.azubister.net/magazin/wp-content/themes/azubister-magazin/img/icon_sharing_mail_hover.png"></a></div>
+	    <div class="likes__mail">
+	    	<a href="mailto:?subject=http://www.azubister.net"></a>
+	    </div>
 		</div>	
 		<div class="likes__ins">
 			<!-- twitter -->
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="de">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="likes__twitter">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="de">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 			<!-- facebook -->
 			<div class="fb-like" data-send="true" data-layout="button_count" data-width="200" data-show-faces="false" data-action="recommend"></div>
 			<div id="fb-root"></div>
@@ -80,25 +87,28 @@
 			  var js, fjs = d.getElementsByTagName(s)[0];
 			  if (d.getElementById(id)) return;
 			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/uk_UA/all.js#xfbml=1";
+			  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
 			<!-- google -->
+			<div class="likes__google">
 			<g:plusone></g:plusone>
-	    <script type="text/javascript">
-		  window.___gcfg = {
-		    lang: 'de'
-		      };
+		    <script type="text/javascript">
+			  window.___gcfg = {
+			    lang: 'de'
+			      };
 
-		      (function() {
-		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		    po.src = 'https://apis.google.com/js/plusone.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		  })();
-	    </script>
+			      (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/plusone.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+		    </script>
+		  </div>
 	    <!-- mail -->
-	    <div><a href="mailto:?subject=http://www.azubister.net/magazin&amp;body=Hi,%0a%0a
-			toller Beitrag auf azubister:%0ahttp://www.azubister.net/magazin"><img style="float: left; width: auto; margin-right: 5px;" src="http://www.azubister.net/magazin/wp-content/themes/azubister-magazin/img/icon_sharing_mail_hover.png"></a></div>
+	    <div class="likes__mail">
+	    	<a href="mailto:?subject=http://www.azubister.net"></a>
+	    </div>
 		</div>
 
 	</div>

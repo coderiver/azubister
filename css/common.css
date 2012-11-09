@@ -117,7 +117,7 @@ table {
 .logo {
   float: left;
   margin-right: 53px;
-  background: url('../img/icons-s4f5d1e759a.png') 0 0 no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 0 no-repeat;
   width: 172px;
   height: 50px;
   -moz-transition: all 0.2s ease-in-out;
@@ -256,7 +256,7 @@ table {
   position: absolute;
   top: 4px;
   left: 15px;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -613px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -613px no-repeat;
   width: 15px;
   height: 15px;
 }
@@ -309,13 +309,13 @@ table {
 }
 /* line 202, ../sass/common.scss */
 .nav-s li .nav-s__menu-ico {
-  background: url('../img/icons-s4f5d1e759a.png') 0 -730px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -790px no-repeat;
   width: 21px;
   height: 19px;
 }
 /* line 205, ../sass/common.scss */
 .nav-s li .nav-s__search-ico {
-  background: url('../img/icons-s4f5d1e759a.png') 0 -556px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -556px no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -329,13 +329,13 @@ table {
 }
 /* line 213, ../sass/common.scss */
 .nav-s li.active .nav-s__menu-ico {
-  background: url('../img/icons-s4f5d1e759a.png') 0 -701px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -761px no-repeat;
   width: 21px;
   height: 19px;
 }
 /* line 216, ../sass/common.scss */
 .nav-s li.active .nav-s__search-ico {
-  background: url('../img/icons-s4f5d1e759a.png') 0 -526px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -526px no-repeat;
   width: 20px;
   height: 20px;
 }
@@ -440,7 +440,7 @@ table {
 .search button i {
   margin: 4px 0 0 5px;
   display: block;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -613px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -613px no-repeat;
   width: 15px;
   height: 15px;
 }
@@ -485,7 +485,7 @@ table {
   position: absolute;
   top: 15px;
   right: 23px;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -586px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -586px no-repeat;
   width: 15px;
   height: 17px;
   cursor: pointer;
@@ -617,7 +617,7 @@ table {
   position: absolute;
   top: 3px;
   left: 0;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -662px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -722px no-repeat;
   width: 5px;
   height: 9px;
 }
@@ -635,13 +635,13 @@ table {
 }
 /* line 407, ../sass/common.scss */
 .footer__nav .footer__social-fb i {
-  background: url('../img/icons-s4f5d1e759a.png') 0 -484px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -484px no-repeat;
   width: 32px;
   height: 32px;
 }
 /* line 412, ../sass/common.scss */
 .footer__nav .footer__social-tw i {
-  background: url('../img/icons-s4f5d1e759a.png') 0 -442px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -442px no-repeat;
   width: 32px;
   height: 32px;
 }
@@ -705,7 +705,7 @@ table {
   position: absolute;
   top: 0px;
   left: 0;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -420px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -420px no-repeat;
   width: 72px;
   height: 12px;
 }
@@ -733,4 +733,55 @@ table {
     right: auto;
     bottom: 30px;
   }
+}
+
+/* line 479, ../sass/common.scss */
+.likes {
+  position: relative;
+}
+/* line 481, ../sass/common.scss */
+.likes .likes__out {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 80px;
+  height: 400px;
+}
+/* line 488, ../sass/common.scss */
+.likes .likes__out .likes__mail a {
+  display: block;
+  width: 75px;
+  height: 20px;
+  background: url('../img/icons-s851643d656.png') 0 -662px no-repeat;
+  width: 75px;
+  height: 20px;
+}
+/* line 493, ../sass/common.scss */
+.likes .likes__out .likes__mail a:hover {
+  background: url('../img/icons-s851643d656.png') 0 -692px no-repeat;
+  width: 75px;
+  height: 20px;
+}
+/* line 499, ../sass/common.scss */
+.likes .likes__ins {
+  overflow: hidden;
+}
+/* line 501, ../sass/common.scss */
+.likes .likes__ins .likes__twitter, .likes .likes__ins .likes__google, .likes .likes__ins .likes__mail, .likes .likes__ins .fb-like {
+  float: left;
+}
+/* line 505, ../sass/common.scss */
+.likes .likes__ins .likes__mail a {
+  display: block;
+  width: 75px;
+  height: 20px;
+  background: url('../img/icons-s851643d656.png') 0 -662px no-repeat;
+  width: 75px;
+  height: 20px;
+}
+/* line 510, ../sass/common.scss */
+.likes .likes__ins .likes__mail a:hover {
+  background: url('../img/icons-s851643d656.png') 0 -692px no-repeat;
+  width: 75px;
+  height: 20px;
 }
