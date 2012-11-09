@@ -10,10 +10,10 @@
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   /* line 3, ../sass/main.scss */
   .main-slider-out {
-    margin: 0 10px 50px 10px;
+    margin: 0 0 50px 0;
   }
 }
 @media only screen and (max-width: 680px) {

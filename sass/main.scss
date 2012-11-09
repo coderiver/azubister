@@ -4,8 +4,8 @@
 	position: relative;
 	margin: 30px 0 50px 0;
 	@include box-shadow(rgba(0,0,0,0.4) 0px 3px 3px);
-	@include respond-to(step1) {
-		margin: 0 10px 50px 10px;
+	@include respond-to(step) {
+		margin: 0 0 50px 0;
 	}
 	@include respond-to(step3) {
 		display: none;

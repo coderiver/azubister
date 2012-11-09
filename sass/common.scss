@@ -481,7 +481,7 @@ table {
 	.likes__out {
 		display: block;
 		position: absolute;
-		top: 30px;
+		top: 0;
 		left: -100px;
 		width: 75px;
 		height: 300px;
@@ -506,10 +506,11 @@ table {
 	}
 	.likes__ins {
 		display: none;
-		margin: 20px 0;
+		margin: 15px 0 12px 0;
 		overflow: hidden;
 		.likes__twitter, .likes__google, .likes__mail, .fb-like {
 			float: left;
+			height: 23px;
 		}
 		.fb-like {
 			width: 210px;
