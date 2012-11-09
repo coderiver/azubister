@@ -479,11 +479,16 @@ table {
 .likes {
 	position: relative;
 	.likes__out {
+		display: block;
 		position: absolute;
-		top: 0;
+		top: 30px;
 		left: -100px;
-		width: 80px;
-		height: 400px;
+		width: 75px;
+		height: 300px;
+		.likes__twitter, .likes__google, .likes__mail, .fb-like {
+			margin-bottom: 15px;
+			text-align: center;
+		}
 		.likes__mail {
 			a {
 				display: block;
@@ -495,12 +500,20 @@ table {
 				}
 			}
 		}
+		@include respond-to(step) {
+			display: none;
+		}
 	}
 	.likes__ins {
+		display: none;
+		margin: 20px 0;
 		overflow: hidden;
 		.likes__twitter, .likes__google, .likes__mail, .fb-like {
 			float: left;
 		}
+		.fb-like {
+			width: 210px;
+		}
 		.likes__mail {
 			a {
 				display: block;
@@ -512,5 +525,20 @@ table {
 				}
 			}
 		}
+		@include respond-to(step) {
+			display: block;
+		}
+	}
+}
+/*banner*/
+.banner {
+	position: absolute;
+	top: 0;
+	right: -100px;
+	width: 80px;
+	height: 600px;
+	background: #f07fbc;
+	@include respond-to(step) {
+		display: none;
 	}
 }

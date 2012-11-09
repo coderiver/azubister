@@ -5,7 +5,7 @@
 /* line 3, ../sass/main.scss */
 .main-slider-out {
   position: relative;
-  margin: 20px 0 50px 0;
+  margin: 30px 0 50px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
@@ -13,7 +13,7 @@
 @media only screen and (max-width: 1000px) {
   /* line 3, ../sass/main.scss */
   .main-slider-out {
-    margin: 20px 10px 50px 10px;
+    margin: 0 10px 50px 10px;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -147,7 +147,7 @@
   position: absolute;
   top: 13px;
   left: 10px;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -638px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -638px no-repeat;
   width: 8px;
   height: 14px;
 }
@@ -437,7 +437,7 @@
   position: absolute;
   top: 10px;
   left: 5px;
-  background: url('../img/icons-s4f5d1e759a.png') 0 -681px no-repeat;
+  background: url('../img/icons-s851643d656.png') 0 -741px no-repeat;
   width: 5px;
   height: 10px;
 }

@@ -741,13 +741,19 @@ table {
 }
 /* line 481, ../sass/common.scss */
 .likes .likes__out {
+  display: block;
   position: absolute;
-  top: 0;
+  top: 30px;
   left: -100px;
-  width: 80px;
-  height: 400px;
+  width: 75px;
+  height: 300px;
 }
 /* line 488, ../sass/common.scss */
+.likes .likes__out .likes__twitter, .likes .likes__out .likes__google, .likes .likes__out .likes__mail, .likes .likes__out .fb-like {
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* line 493, ../sass/common.scss */
 .likes .likes__out .likes__mail a {
   display: block;
   width: 75px;
@@ -756,21 +762,33 @@ table {
   width: 75px;
   height: 20px;
 }
-/* line 493, ../sass/common.scss */
+/* line 498, ../sass/common.scss */
 .likes .likes__out .likes__mail a:hover {
   background: url('../img/icons-s851643d656.png') 0 -692px no-repeat;
   width: 75px;
   height: 20px;
 }
-/* line 499, ../sass/common.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 481, ../sass/common.scss */
+  .likes .likes__out {
+    display: none;
+  }
+}
+/* line 507, ../sass/common.scss */
 .likes .likes__ins {
+  display: none;
+  margin: 20px 0;
   overflow: hidden;
 }
-/* line 501, ../sass/common.scss */
+/* line 511, ../sass/common.scss */
 .likes .likes__ins .likes__twitter, .likes .likes__ins .likes__google, .likes .likes__ins .likes__mail, .likes .likes__ins .fb-like {
   float: left;
 }
-/* line 505, ../sass/common.scss */
+/* line 514, ../sass/common.scss */
+.likes .likes__ins .fb-like {
+  width: 210px;
+}
+/* line 518, ../sass/common.scss */
 .likes .likes__ins .likes__mail a {
   display: block;
   width: 75px;
@@ -779,11 +797,34 @@ table {
   width: 75px;
   height: 20px;
 }
-/* line 510, ../sass/common.scss */
+/* line 523, ../sass/common.scss */
 .likes .likes__ins .likes__mail a:hover {
   background: url('../img/icons-s851643d656.png') 0 -692px no-repeat;
   width: 75px;
   height: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  /* line 507, ../sass/common.scss */
+  .likes .likes__ins {
+    display: block;
+  }
+}
+
+/*banner*/
+/* line 534, ../sass/common.scss */
+.banner {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 80px;
+  height: 600px;
+  background: #f07fbc;
+}
+@media only screen and (max-width: 1200px) {
+  /* line 534, ../sass/common.scss */
+  .banner {
+    display: none;
+  }
 }
 
 /* BACKGROUND SIZE */
@@ -813,7 +854,7 @@ table {
 /* line 3, ../sass/main.scss */
 .main-slider-out {
   position: relative;
-  margin: 20px 0 50px 0;
+  margin: 30px 0 50px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 3px;
@@ -821,7 +862,7 @@ table {
 @media only screen and (max-width: 1000px) {
   /* line 3, ../sass/main.scss */
   .main-slider-out {
-    margin: 20px 10px 50px 10px;
+    margin: 0 10px 50px 10px;
   }
 }
 @media only screen and (max-width: 680px) {
