@@ -31,6 +31,13 @@ table {
 	border-spacing: 0;
 	border-collapse: collapse;
 }
+.h1 {
+
+}
+.h2 {
+	font-size: 18px;
+	color: #37559a;
+}
 .clr {
 	clear: both;
 }
@@ -528,6 +535,28 @@ table {
 		}
 		@include respond-to(step) {
 			display: block;
+		}
+	}
+}
+/*breadcrumps*/
+.breadcrumps {
+	margin: 9px 0 25px 0;
+	overflow: hidden;
+	li {
+		position: relative;
+		float: left;
+		height: 16px;
+		margin-right: 25px;
+		font-size: 12px;
+		color: #37559A;
+		a {
+			border-bottom: 1px dotted #37559A;
+		}
+		i {
+			position: absolute;
+			top: 2px;
+			right: -17px;
+			@include sized-sprite($icons, arr3);
 		}
 	}
 }

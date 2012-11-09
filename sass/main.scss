@@ -2,7 +2,7 @@
 /*main slider*/
 .main-slider-out {
 	position: relative;
-	margin: 30px 0 50px 0;
+	margin: 30px 0 40px 0;
 	@include box-shadow(rgba(0,0,0,0.4) 0px 3px 3px);
 	@include respond-to(step) {
 		margin: 0 0 50px 0;
@@ -227,11 +227,9 @@
 	float: left;
 	width: 28%;
 	padding: 2%;
-	margin-left: 2%;
-	background: #f1f1f1;
-	@include border-radius(3px);
-	@include box-shadow(rgba(0,0,0,0.3) 0px 1px 2px);
+	margin-left: 2%;	
 	overflow: hidden;
+	@extend %block;
 	&:first-child {
 		margin-left: 0;
 	}		

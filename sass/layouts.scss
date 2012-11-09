@@ -1,17 +1,16 @@
 @import "base";
-
 /* default layout */
-.l{
-	width: 100%;
-	display: inline-block;
-
-	.l-col1{
-		float:left;
-		width: 20%;
-	}
-	
-	.l-col2{
-		float:right;
-		width: 70%;
-	}
+.col-1 {
+	float: left;
+	width: 66%;
+}
+.col-1_1 {
+	float: right;
+}
+.col-2 {
+	float: right;
+	width: 32%;
+}	
+.col-2_1 {
+	float: left;
 }

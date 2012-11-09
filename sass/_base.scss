@@ -88,3 +88,10 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
   background: sprite($map, $sprite) no-repeat;
   @include image-size(sprite-file($map, $sprite));
 }
+
+//extend
+%block {
+  background: #f1f1f1;
+  @include border-radius(3px);
+  @include box-shadow(rgba(0,0,0,0.3) 0px 2px 1px);
+}

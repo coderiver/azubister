@@ -2,18 +2,24 @@
 /* ROTATE*/
 /* TRANSITION */
 /* default layout */
-/* line 4, ../sass/layouts.scss */
-.l {
-  width: 100%;
-  display: inline-block;
-}
-/* line 8, ../sass/layouts.scss */
-.l .l-col1 {
+/* line 3, ../sass/layouts.scss */
+.col-1 {
   float: left;
-  width: 20%;
+  width: 66%;
 }
-/* line 13, ../sass/layouts.scss */
-.l .l-col2 {
+
+/* line 7, ../sass/layouts.scss */
+.col-1_1 {
   float: right;
-  width: 70%;
+}
+
+/* line 10, ../sass/layouts.scss */
+.col-2 {
+  float: right;
+  width: 32%;
+}
+
+/* line 14, ../sass/layouts.scss */
+.col-2_1 {
+  float: left;
 }
