@@ -2,7 +2,44 @@
 	body {
 		min-width: 1000px;
 	}
-	.search__txt {
-		line-height: 23px;
+	.search {
+		input {
+			line-height: 23px;
+		}
+	}
+	.ext-search__fields {
+		input {
+			line-height: 26px;
+		}
+	}
+	.top10 {
+		span {
+			zoom: 1;
+		}
+	}
+	.view-all {
+		a {
+			zoom: 1;
+		}
+	}	
+}
+
+/*only ie7*/
+.ie7 {
+	.nav-more {
+		a {
+			display: block;
+			height: 40px;
+			padding-top: 10px;
+		}
+	}
+	.view-all {
+		margin-top: 20px;
+	}	
+	.ext-search__fields {
+		input {
+			height: 22px;
+			line-height: 22px;
+		}
 	}
 }

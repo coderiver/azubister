@@ -2,7 +2,36 @@
 .lteie8 body {
   min-width: 1000px;
 }
-/* line 5, ../sass/ie.scss */
-.lteie8 .search__txt {
+/* line 6, ../sass/ie.scss */
+.lteie8 .search input {
   line-height: 23px;
+}
+/* line 11, ../sass/ie.scss */
+.lteie8 .ext-search__fields input {
+  line-height: 26px;
+}
+/* line 16, ../sass/ie.scss */
+.lteie8 .top10 span {
+  zoom: 1;
+}
+/* line 21, ../sass/ie.scss */
+.lteie8 .view-all a {
+  zoom: 1;
+}
+
+/*only ie7*/
+/* line 30, ../sass/ie.scss */
+.ie7 .nav-more a {
+  display: block;
+  height: 40px;
+  padding-top: 10px;
+}
+/* line 36, ../sass/ie.scss */
+.ie7 .view-all {
+  margin-top: 20px;
+}
+/* line 40, ../sass/ie.scss */
+.ie7 .ext-search__fields input {
+  height: 22px;
+  line-height: 22px;
 }

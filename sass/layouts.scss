@@ -2,7 +2,10 @@
 /* default layout */
 .col-1 {
 	float: left;
-	width: 66%;
+	width: 66%;	
+	@include respond-to(step1) {
+		width: 100%;
+	}
 }
 .col-1_1 {
 	float: right;
@@ -10,6 +13,9 @@
 .col-2 {
 	float: right;
 	width: 32%;
+	@include respond-to(step1) {
+		width: 100%;
+	}
 }	
 .col-2_1 {
 	float: left;

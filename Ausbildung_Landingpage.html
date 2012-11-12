@@ -1,4 +1,5 @@
 <!doctype html>
+<!--[if IE 7]><html lang="ru-RU" class="ie7"><![endif]-->
 <!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
@@ -16,7 +17,7 @@
 	<div class="header">
 		<h1 class="logo"><a href="#">Azubister - Dein Ausbildungsportal</a></h1>
 		<ul class="nav">
-			<li><a href="#">Ausbildung</a></li>
+			<li class="active"><a href="#">Ausbildung</a></li>
 			<li><a href="#">Ausbildungsplätze</a></li>
 			<li><a href="#">Betriebe</a></li>
 			<li><a href="#">Magazin</a></li>
@@ -43,57 +44,160 @@
 			<li><span>Suche</span></li>			
 		</ul>
 		<!-- END .breadcrumps -->
-		<div class="col-2 col-2_1">
-			<div class="search-filter-out">
-				<div class="search-filter">
-					<h2 class="h2">Suche filtern<span>Alle Filter zurücksetzen<i></i></span></h2>	
-					<h3>Objekttyp<i></i></h3>
-					<ul>			
-					  <li><input id="f1" type="checkbox"><label for="f1">Betriebe</label></li>
-					  <li><input id="f2" type="checkbox"><label for="f2">Ausbildungsplätze</label></li>
-					  <li><input id="f3" type="checkbox"><label for="f3">Ausbildungen</label></li>
-					  <li><input id="f4" type="checkbox"><label for="f4">Themen</label></li>
-					  <li><input id="f5" type="checkbox"><label for="f5">Artikel</label></li>
-					  <li><input id="f6" type="checkbox"><label for="f6">Community</label></li>
+		<div class="col-1">
+			<!-- BEGIN .ext-search -->
+			<form class="ext-search" action="">
+				<div class="ext-search__fields-wrap">
+					<div class="ext-search__fields">
+						<input type="text" placeholder="Ausbildung, Betrieb, Branche oder Stadt">
+						<button type="submit">Suchen<i></i></button>
+					</div>					
+				</div>
+				<div class="ext-search__lists">
+					<ul>
+						<li><b>Branchen</b></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Gesundheit</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Wirtschaft & Handel</a></li>
+						<li><a href="#">Reise & Tourismus</a></li>
+						<li><a href="#">Transport & Verkehr</a></li>
+						<li><a href="#">Service & Dienstleistung</a></li>
+						<li><a href="#">Natur & Umwelt</a></li>
+						<li><a href="#">Handwerk</a></li>
 					</ul>
-					<h3>Schulabschluss<i></i></h3>
-					<ul>			
-					  <li><input id="f7" type="checkbox"><label for="f7">Betriebe</label></li>
-					  <li><input id="f8" type="checkbox"><label for="f8">Themen</label></li>
-					  <li><input id="f9" type="checkbox"><label for="f9">Artikel</label></li>
-					  <li><input id="f10" type="checkbox"><label for="f10">Community</label></li>
+					<ul class="ext-search__list">
+						<li><a href="#">IT / Computer</a></li>
+						<li><a href="#">Pflege</a></li>
+						<li><a href="#">Design</a></li>
+						<li><a href="#">Kinder</a></li>
+						<li><a href="#">KFZ</a></li>
+						<li><a href="#">Elektronik</a></li>
+						<li><a href="#">Medizin</a></li>
+						<li><a href="#">Verwaltung</a></li>
+						<li><a href="#">Veranstaltung</a></li>
 					</ul>
-					<h3>Ausbildungsweg<i></i></h3>
-					<ul>			
-					  <li><input id="f11" type="checkbox"><label for="f11">Betriebe</label></li>
-					  <li><input id="f12" type="checkbox"><label for="f12">Ausbildungsplätze</label></li>
-					  <li><input id="f13" type="checkbox"><label for="f13">Ausbildungen</label></li>
-					  <li><input id="f14" type="checkbox"><label for="f14">Themen</label></li>
-					  <li><input id="f15" type="checkbox"><label for="f15">Artikel</label></li>
+					<ul class="ext-search__list-1">
+						<li><b>Typ</b></li>
+						<li><a href="#">Duale Ausbildung</a></li>
+						<li><a href="#">Duales Studium</a></li>
+						<li><a href="#">schulische Ausbildung</a></li>
+						<li><a href="#">Beamte</a></li>
 					</ul>
-					<h3>Kategorien<i></i></h3>
-					<ul>			
-					  <li><input id="f16" type="checkbox"><label for="f16">Betriebe</label></li>
-					  <li><input id="f17" type="checkbox"><label for="f17">Ausbildungsplätze</label></li>
+					<ul class="ext-search__list-1">
+						<li><b>Schulabschluss</b></li>
+						<li><a href="#">Hauptschule</a></li>
+						<li><a href="#">Realschule</a></li>
+						<li><a href="#">Abitur</a></li>
 					</ul>
-					<h3>PLZ<i></i></h3>
-					<ul>			
-					  <li><input id="f18" type="checkbox"><label for="f18">Betriebe</label></li>
-					  <li><input id="f19" type="checkbox"><label for="f19">Ausbildungsplätze</label></li>
-					  <li><input id="f20" type="checkbox"><label for="f20">Ausbildungen</label></li>
-					  <li><input id="f21" type="checkbox"><label for="f21">Community</label></li>
+				</div>
+			</form>
+			<!-- END .ext-search -->
+			<!-- BEGIN .top10 -->			
+			<div class="top10">
+				<h2 class="h2">Top 10 Ausbildungen</h2>
+				<div class="top10__lists">
+					<ul>
+						<li><b>Für Jungs</b></li>
+						<li class="top10__three"><span>1.</span><a href="#">Bürokaufmann</a></li>
+						<li class="top10__three"><span>2.</span><a href="#">KFZ-Mechatroniker</a></li>
+						<li class="top10__three"><span>3.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>4.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>5.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>6.</span><a href="#">KFZ-Mechatroniker</a></li>
+						<li><span>7.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>8.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>9.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>10.</span><a href="#">Industriekaufmann</a></li>
 					</ul>
-					<h3>Quelle<i></i></h3>
-					<ul>			
-					  <li><input id="f22" type="checkbox"><label for="f22">Betriebe</label></li>
-					  <li><input id="f23" type="checkbox"><label for="f23">Ausbildungsplätze</label></li>
-					  <li><input id="f24" type="checkbox"><label for="f24">Community</label></li>
+					<ul>
+						<li><b>Für Jungs</b></li>
+						<li class="top10__three"><span>1.</span><a href="#">Bürokaufmann</a></li>
+						<li class="top10__three"><span>2.</span><a href="#">KFZ-Mechatroniker</a></li>
+						<li class="top10__three"><span>3.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>4.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>5.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>6.</span><a href="#">KFZ-Mechatroniker</a></li>
+						<li><span>7.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>8.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>9.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>10.</span><a href="#">Industriekaufmann</a></li>
+					</ul>
+					<ul class="top10__list">
+						<li><b>Für Jungs</b></li>
+						<li class="top10__three"><span>1.</span><a href="#">Bürokaufmann</a></li>
+						<li class="top10__three"><span>2.</span><a href="#">KFZ-Mechatroniker</a></li>
+						<li class="top10__three"><span>3.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>4.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>5.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>6.</span><a href="#">KFZ-Mechatroniker</a></li>
+						<li><span>7.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>8.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>9.</span><a href="#">Industriekaufmann</a></li>
+						<li><span>10.</span><a href="#">Industriekaufmann</a></li>
 					</ul>
 				</div>				
+				<div class="top10__info">
+					<h3 class="h3">Tipps für deine Ausbildungssuche</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+				</div>
 			</div>
+			<!-- END .top10 -->
 		</div>
-		<div class="col-1  col-1_1">
-			
+		<div class="col-2">
+			<div class="advert advert_aside">
+				<span>Anzeige</span>
+				<img src="img/advert.jpg" alt="">
+			</div>
+			<!-- BEGIN .nav-more -->			
+			<div class="nav-more">
+				<div class="aside-title">Weiterführende Informationen im Magazin</div>
+				<ul>
+					<li><a class="nav-more__1" href="#">Handwerk<i></i></a></li>
+					<li><a class="nav-more__2" href="#">Design<i></i></a></li>
+					<li><a class="nav-more__3" href="#">Umwelt & Natur<i></i></a></li>
+					<li><a class="nav-more__4" href="#">Veranstaltung<i></i></a></li>
+					<li><a class="nav-more__5" href="#">Sport<i></i></a></li>
+					<li><a class="nav-more__6" href="#">Marketing<i></i></a></li>
+					<li><a class="nav-more__7" href="#">Verwaltung<i></i></a></li>
+					<li><a class="nav-more__8" href="#">KFZ<i></i></a></li>
+					<li><a class="nav-more__9" href="#">Pflege<i></i></a></li>
+					<li><a class="nav-more__10" href="#">IT & Computer<i></i></a></li>
+					<li><a class="nav-more__11" href="#">Medizin<i></i></a></li>
+					<li><a class="nav-more__12" href="#">Transport & Verkehr<i></i></a></li>
+					<li><a class="nav-more__13" href="#">Gesundheit<i></i></a></li>
+					<li><a class="nav-more__14" href="#">Reise & Tourismus<i></i></a></li>
+					<li><a class="nav-more__15" href="#">Kinder<i></i></a></li>
+					<li><a class="nav-more__16" href="#">Service & Dienstleistung<i></i></a></li>
+					<li><a class="nav-more__17" href="#">Handel & Wirtschaft<i></i></a></li>
+					<li><a class="nav-more__6" href="#">Elektronik<i></i></a></li>
+				</ul>
+			</div>
+			<!-- END .nav-more -->
+			<!-- BEGIN .aside-info -->
+			<ul class="aside-info">
+				<li>
+					<a href="#"><img src="img/pic1.jpg" alt=""></a>
+					<a href="#">Duales Studium</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/pic1.jpg" alt=""></a>
+					<a href="#">Ausbildung mit Hauptschulabschluss</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/pic1.jpg" alt=""></a>
+					<a href="#">Duales Studium</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/pic1.jpg" alt=""></a>
+					<a href="#">Ausbildung mit Hauptschulabschluss</a>
+				</li>
+			</ul>
+			<div class="view-all">
+				<i></i>
+				<a href="#">Alle anzeigen</a>
+			</div>
+			<!-- END .aside-info -->
 		</div>
 		<div class="clr"></div>
 	</div>

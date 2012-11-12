@@ -1,6 +1,7 @@
 @import "compass/css3";
 
 // sprites
+$experimental-support-for-svg: true;
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
 

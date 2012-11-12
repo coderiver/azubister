@@ -25,6 +25,7 @@ input, textarea, button {
 	outline: none;
 }
 button {
+	line-height: 1;
 	cursor: pointer;
 }
 table {
@@ -109,10 +110,10 @@ table {
 		height: 43px;	
 		@include border-radius(3px 3px 0 0);		
 		&.active {
-			margin-left: -1px;
+			margin-right: -1px;
 			background: #fff;
 			a {
-				padding: 0 18px 0 19px;
+				padding: 0 19px 0 18px;
 				color: #37559a;
 			}			
 		}	
@@ -225,6 +226,66 @@ table {
 			}
 		}
 	}
+}
+/*nav-extra*/
+.nav-more {
+	margin: 30px 0;
+	ul {
+		overflow: hidden;
+	}
+	li {
+		float: left;
+		width: 47%;	
+		padding-right: 3%;	
+		@include respond-to(step1) {
+			width: 33%;
+			padding-right: 0px;
+		}
+		@include respond-to(step2) {
+			width: 50%;
+		}
+		@include respond-to(step3) {
+			width: 100%;
+		}
+	}
+	a {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		height: 50px;
+		padding-left: 65px;
+	}
+	i {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.nav-more__1 {i {@include sized-sprite($icons, nm1);}}
+.nav-more__2 {i {@include sized-sprite($icons, nm2);}}
+.nav-more__3 {i {@include sized-sprite($icons, nm3);}}
+.nav-more__4 {i {@include sized-sprite($icons, nm4);}}
+.nav-more__5 {i {@include sized-sprite($icons, nm5);}}
+.nav-more__6 {i {@include sized-sprite($icons, nm6);}}
+.nav-more__7 {i {@include sized-sprite($icons, nm7);}}
+.nav-more__8 {i {@include sized-sprite($icons, nm8);}}
+.nav-more__9 {i {@include sized-sprite($icons, nm9);}}
+.nav-more__10 {i {@include sized-sprite($icons, nm10);}}
+.nav-more__11 {i {@include sized-sprite($icons, nm11);}}
+.nav-more__12 {i {@include sized-sprite($icons, nm12);}}
+.nav-more__13 {i {@include sized-sprite($icons, nm13);}}
+.nav-more__14 {i {@include sized-sprite($icons, nm14);}}
+.nav-more__15 {i {@include sized-sprite($icons, nm15);}}
+.nav-more__16 {i {@include sized-sprite($icons, nm16);}}
+.nav-more__17 {i {@include sized-sprite($icons, nm17);}}
+.aside-title {
+	height: 24px;
+	margin-bottom: 10px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #666666;
+	border-top: 1px dotted #cfcfcf;
+	border-bottom: 1px dotted #cfcfcf;
 }
 /*search*/
 .search {
@@ -540,12 +601,13 @@ table {
 }
 /*breadcrumps*/
 .breadcrumps {
-	margin: 9px 0 25px 0;
+	margin: 8px 0 24px 0;
 	overflow: hidden;
 	li {
 		position: relative;
 		float: left;
-		height: 16px;
+		height: 18px;
+		line-height: 18px;
 		margin-right: 25px;
 		font-size: 12px;
 		color: #37559A;
@@ -554,10 +616,42 @@ table {
 		}
 		i {
 			position: absolute;
-			top: 2px;
+			top: 4px;
 			right: -17px;
 			@include sized-sprite($icons, arr3);
 		}
+	}
+}
+/*view-all*/
+.view-all {
+	position: relative;
+	height: 30px;
+	margin-bottom: 25px;
+	text-align: center;
+	overflow: hidden;
+	i {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		@include box-shadow(#ececec 0px 1px 1px);
+		background: #bfbfbf;
+		@include background-image(linear-gradient(left, #f6f6f6 10%, #bfbfbf 30%, #bfbfbf 70%, #f6f6f6 100%));
+		z-index: 5;
+	}
+	a {
+		position: relative;
+		display: inline-block;
+		height: 30px;
+		padding: 0 30px;
+		margin-top: -5px;
+		line-height: 30px;
+		border: 1px solid #bfbfbf;
+		@include border-radius(3px);
+		background: #fff;
+		@include box-shadow(#bfbfbf 0px 1px 3px);
+		z-index: 10;
 	}
 }
 /*banner*/
@@ -570,5 +664,29 @@ table {
 	background: #f07fbc;
 	@include respond-to(step) {
 		display: none;
+	}
+}
+/*advert*/
+.advert {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	span {
+		position: absolute;
+		top: -15px;
+		right: 5px;
+		font-size: 10px;
+		color: #9e9e9e;
+	}	
+}
+.advert_main {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	@include respond-to(step3) {
+		top: auto;
+		bottom: 0;
+		right: 50%;
+		margin-right: -150px;
 	}
 }

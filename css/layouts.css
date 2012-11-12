@@ -7,19 +7,31 @@
   float: left;
   width: 66%;
 }
+@media only screen and (max-width: 1000px) {
+  /* line 3, ../sass/layouts.scss */
+  .col-1 {
+    width: 100%;
+  }
+}
 
-/* line 7, ../sass/layouts.scss */
+/* line 10, ../sass/layouts.scss */
 .col-1_1 {
   float: right;
 }
 
-/* line 10, ../sass/layouts.scss */
+/* line 13, ../sass/layouts.scss */
 .col-2 {
   float: right;
   width: 32%;
 }
+@media only screen and (max-width: 1000px) {
+  /* line 13, ../sass/layouts.scss */
+  .col-2 {
+    width: 100%;
+  }
+}
 
-/* line 14, ../sass/layouts.scss */
+/* line 20, ../sass/layouts.scss */
 .col-2_1 {
   float: left;
 }
