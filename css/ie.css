@@ -20,17 +20,11 @@
 }
 
 /*only ie7*/
-/* line 30, ../sass/ie.scss */
-.ie7 .nav-more a {
-  display: block;
-  height: 40px;
-  padding-top: 10px;
-}
-/* line 36, ../sass/ie.scss */
+/* line 29, ../sass/ie.scss */
 .ie7 .view-all {
   margin-top: 20px;
 }
-/* line 40, ../sass/ie.scss */
+/* line 33, ../sass/ie.scss */
 .ie7 .ext-search__fields input {
   height: 22px;
   line-height: 22px;

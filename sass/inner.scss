@@ -7,7 +7,6 @@
 .search-filter {
 	margin-bottom: 35px;
 	padding: 20px;
-	color: #666666;
 	.h2 {
 		position: relative;
 		margin-bottom: 15px;
@@ -17,7 +16,6 @@
 			bottom: 1px;
 			padding-right: 20px;
 			font-size: 12px;
-			color: #666666;
 			font-weight: normal;
 			cursor: pointer;
 		}
@@ -126,7 +124,6 @@
 		height: 22px;
 		line-height: 22px;
 		font-size: 14px;
-		color: #666666;
 	}
 	a {
 		font-size: 12px;
@@ -146,10 +143,8 @@
 }
 /*top10*/
 .top10 {	
-	.h2 {
+	.h1 {
 		margin: 45px 0 15px 0;
-		font-size: 30px;
-		color: #666666;
 	}	
 }
 .top10__lists {
@@ -175,7 +170,6 @@
 		margin-bottom: 10px;
 		line-height: 20px;
 		font-size: 12px;
-		color: #666666;
 	}
 	b {
 		font-size: 16px;
@@ -197,11 +191,8 @@
 }
 .top10__info {
 	margin-bottom: 30px;
-	color: #666666;
 	.h3 {
 		margin: 30px 0 20px 0;
-		font-size: 20px;	
-		font-weight: normal;	
 	}
 	p {
 		line-height: 1.5;
@@ -209,10 +200,11 @@
 }
 /*aside-info*/
 .aside-info {
+	width: 320px;
 	overflow: hidden;
-	margin-right: -25px;
-	@include respond-to(step1) {
-		margin-right: 0px;
+	ul {
+		margin-right: -25px;
+		overflow: hidden;
 	}
 	li {
 		float: left;
@@ -228,5 +220,239 @@
 	}
 	img {
 		margin-bottom: 5px;
+	}
+	@include respond-to(step1) {
+		width: 100%;
+	}
+}
+/*job-profile*/
+.job-profile {	
+	position: relative;
+	padding: 20px;
+	margin-bottom: 18px;
+	overflow: hidden;
+	@extend %block;
+}
+.job-profile__pic {
+	float: left;	
+	@include transition();
+	img {
+		display: block;
+		margin-right: 20px;
+		@include respond-to(step4) {
+			width: 100%;
+			margin-right: 0px;
+		}
+	}
+	@include respond-to(step2) {
+		float: none;
+		margin-bottom: 20px;
+	}
+}
+.job-profile__info {
+	position: relative;
+	padding-bottom: 60px;
+	overflow: hidden;
+	.h2 {
+		margin-bottom: 15px;
+		color: #37559A;
+		@include respond-to(step1) {
+			font-size: 22px;
+		}
+	}
+	li {
+		position: relative;
+		padding-left: 10px;
+		margin-bottom: 5px;
+		i {
+			position: absolute;
+			top: 3px;
+			left: 0;
+			@include sized-sprite($icons, arr4);
+		}
+	}
+	@include respond-to(step3) {
+		padding-bottom: 140px;
+	}
+}
+.job-profile__btn {
+	position: absolute;
+	bottom: 20px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px 0 30px;
+	@include box-shadow(rgba(0,0,0,0.3) 0px 1px 2px);
+	@include border-radius(2px);
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;	
+	i {
+		position: absolute;
+		top: 12px;
+		left: 13px;
+		@include sized-sprite($icons, arr5);
+	}
+	@include respond-to(step1) {
+		font-size: 16px;
+	}
+	@include respond-to(step3) {
+		left: 20px;
+	}
+}
+.job-profile__btn_gray {
+	right: 250px;
+	border: 1px solid #8c8c8c;
+	background: #8c8c8c;
+	@include background-image(linear-gradient(#8c8c8c, #666666));
+	@include respond-to(step1) {
+		right: 230px;
+	}
+	@include respond-to(step3) {
+		right: auto;
+		bottom: 80px;
+	}
+}
+.job-profile__btn_blue {
+	right: 20px;
+	border: 1px solid #22b5f4;
+	background: #22b5f4;
+	@include background-image(linear-gradient(#22b5f4, #0691bf));
+	@include respond-to(step3) {
+		right: auto;
+		bottom: 20px;
+	}
+}
+/*job-gallery*/
+.job-gallery {	
+	overflow: hidden;
+	ul {
+		margin: 0 -20px 20px 0;
+		font-size: 0;
+		overflow: hidden;
+		text-align: center;
+		@include respond-to(step1) {
+			margin: 0;
+		}
+	}
+	li {
+		position: relative;
+		float: left;
+		width: 150px;
+		margin-right: 20px;
+		cursor: pointer;
+		@include respond-to(step1) {
+			float: none;
+			display: inline-block;
+			margin: 0 20px 20px 0; 
+		}
+		@include respond-to(step4) {
+			margin: 0 5px 5px 0; 
+		}
+		@include respond-to(step5) {
+			margin: 0 5px 5px 5px;
+		}
+		i {
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+		}
+	}	
+	.job-gallery__def {
+		i {
+			top: 0;
+			left: 0;
+			width: 148px;
+			height: 98px;
+			border: 1px solid #f2f2f2;
+		}
+	}
+}
+.job-gallery__video {
+	i {
+		@include sized-sprite($icons, video);
+	}	
+}
+.job-gallery__photo {
+	i {
+		@include sized-sprite($icons, photo);
+	}
+}
+/*job-detail*/
+.job-detail {
+	.h3 {
+		padding: 20px 0;
+		border-top: 1px dotted #cfcfcf;
+		&:first-child {
+			padding: 0 0 20px 0;
+			border: none;
+		}
+	}
+	p {
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+}
+/*job-training*/
+.job-training {
+	margin-bottom: 20px;
+	padding: 0 1px 2px 1px;
+	overflow: hidden;
+}
+.job-training__left, .job-training__right {
+	width: 49%;
+	margin-bottom: 20px;
+	@include respond-to(step3) {
+		width: 100%;
+	}
+}
+.job-training__left {
+	float: left;
+}
+.job-training__right {
+	float: right;
+}
+.job-training__blue, .job-training__red {
+	position: relative;
+	min-height: 90px;
+	padding: 20px 20px 20px 65px;
+	@extend %block;
+	em {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	.h4 {
+		margin-bottom: 12px;
+	}
+	a {
+		position: relative;
+		display: block;	
+		margin-top: 7px;	
+		padding-left: 15px;
+	}
+	i {
+		position: absolute;
+		top: 2px;
+		left: 0;
+		@include sized-sprite($icons, arr3);
+	}
+	@include respond-to(step3) {
+		min-height: auto;
+	}
+}
+.job-training__blue {
+	em {
+		@include sized-sprite($icons, yes);
+	}
+	.h4 {
+		color: #22b5f4;
+	}
+}
+.job-training__red {
+	em {
+		@include sized-sprite($icons, no);
+	}
+	.h4 {
+		color: #e2007a;
 	}
 }

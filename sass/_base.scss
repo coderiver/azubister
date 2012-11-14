@@ -96,3 +96,8 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
   @include border-radius(3px);
   @include box-shadow(rgba(0,0,0,0.3) 0px 2px 1px);
 }
+%nav-more {
+  height: 40px;
+  padding-top: 10px;
+  line-height: 1.1;
+}

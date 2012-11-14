@@ -8,6 +8,7 @@ body {
 	    size: 14px;
 	  	}
 	line-height: 1.2;
+	color: #666666;
 }
 /*resets*/
 a img, fieldset {
@@ -33,11 +34,17 @@ table {
 	border-collapse: collapse;
 }
 .h1 {
-
+	font-size: 30px;
 }
 .h2 {
+	font-size: 24px;
+}
+.h3 {
+	font-size: 20px;
+	font-weight: normal;
+}
+.h4 {
 	font-size: 18px;
-	color: #37559a;
 }
 .clr {
 	clear: both;
@@ -234,9 +241,12 @@ table {
 		overflow: hidden;
 	}
 	li {
+		position: relative;
 		float: left;
 		width: 47%;	
+		height: 50px;
 		padding-right: 3%;	
+		vertical-align: middle;
 		@include respond-to(step1) {
 			width: 33%;
 			padding-right: 0px;
@@ -244,46 +254,61 @@ table {
 		@include respond-to(step2) {
 			width: 50%;
 		}
-		@include respond-to(step3) {
-			width: 100%;
-		}
 	}
 	a {
 		position: relative;
-		display: table-cell;
-		vertical-align: middle;
+		display: block;	
 		height: 50px;
+		line-height: 50px;	
 		padding-left: 65px;
+		vertical-align: middle;
 	}
 	i {
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
+	.nav-more__1 {i {@include sized-sprite($icons, nm1);}}
+	.nav-more__2 {i {@include sized-sprite($icons, nm2);}}
+	.nav-more__3 {
+		@extend %nav-more;
+		i {@include sized-sprite($icons, nm3);}
+	}
+	.nav-more__4 {i {@include sized-sprite($icons, nm4);}}
+	.nav-more__5 {i {@include sized-sprite($icons, nm5);}}
+	.nav-more__6 {i {@include sized-sprite($icons, nm6);}}
+	.nav-more__7 {i {@include sized-sprite($icons, nm7);}}
+	.nav-more__8 {i {@include sized-sprite($icons, nm8);}}
+	.nav-more__9 {i {@include sized-sprite($icons, nm9);}}
+	.nav-more__10 {
+		@extend %nav-more;
+		i {@include sized-sprite($icons, nm10);}
+	}
+	.nav-more__11 {i {@include sized-sprite($icons, nm11);}}
+	.nav-more__12 {
+		@extend %nav-more;
+		i {@include sized-sprite($icons, nm12);}
+	}
+	.nav-more__13 {i {@include sized-sprite($icons, nm13);}}
+	.nav-more__14 {
+		@extend %nav-more;
+		i {@include sized-sprite($icons, nm14);}
+	}
+	.nav-more__15 {i {@include sized-sprite($icons, nm15);}}
+	.nav-more__16 {
+		@extend %nav-more;
+		i {@include sized-sprite($icons, nm16);}
+	}
+	.nav-more__17 {
+		@extend %nav-more;
+		i {@include sized-sprite($icons, nm17);}
+	}
 }
-.nav-more__1 {i {@include sized-sprite($icons, nm1);}}
-.nav-more__2 {i {@include sized-sprite($icons, nm2);}}
-.nav-more__3 {i {@include sized-sprite($icons, nm3);}}
-.nav-more__4 {i {@include sized-sprite($icons, nm4);}}
-.nav-more__5 {i {@include sized-sprite($icons, nm5);}}
-.nav-more__6 {i {@include sized-sprite($icons, nm6);}}
-.nav-more__7 {i {@include sized-sprite($icons, nm7);}}
-.nav-more__8 {i {@include sized-sprite($icons, nm8);}}
-.nav-more__9 {i {@include sized-sprite($icons, nm9);}}
-.nav-more__10 {i {@include sized-sprite($icons, nm10);}}
-.nav-more__11 {i {@include sized-sprite($icons, nm11);}}
-.nav-more__12 {i {@include sized-sprite($icons, nm12);}}
-.nav-more__13 {i {@include sized-sprite($icons, nm13);}}
-.nav-more__14 {i {@include sized-sprite($icons, nm14);}}
-.nav-more__15 {i {@include sized-sprite($icons, nm15);}}
-.nav-more__16 {i {@include sized-sprite($icons, nm16);}}
-.nav-more__17 {i {@include sized-sprite($icons, nm17);}}
 .aside-title {
 	height: 24px;
 	margin-bottom: 10px;
 	line-height: 24px;
 	font-size: 16px;
-	color: #666666;
 	border-top: 1px dotted #cfcfcf;
 	border-bottom: 1px dotted #cfcfcf;
 }
@@ -339,12 +364,14 @@ table {
 		}
 	}
 	button {
+		position: relative;
 		width: 26px;
 		background: #22b5f4;
 		@include border-radius(0 5px 5px 0);
 		i {
-			margin: 4px 0 0 5px;
-			display: block;
+			position: absolute;
+			top: 4px;
+			left: 6px;
 			@include sized-sprite($icons, search);
 			@include respond-to(step3) {
 				display: none;
@@ -511,8 +538,7 @@ table {
 	}
 }
 .footer__copyright {
-	height: 50px;
-	line-height: 50px;
+	padding: 17px 0;
 	text-align: center;
 	font-size: 12px;
 	color: #fff;
