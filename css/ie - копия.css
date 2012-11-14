@@ -1,29 +1,26 @@
-/* line 2, ../sass/ie.scss */
+@charset "IBM866";
+/* line 2, ../sass/ie - копия.scss */
 .lteie8 body {
   min-width: 1000px;
 }
-/* line 6, ../sass/ie.scss */
+/* line 6, ../sass/ie - копия.scss */
 .lteie8 .search input {
   line-height: 23px;
 }
-/* line 11, ../sass/ie.scss */
+/* line 11, ../sass/ie - копия.scss */
 .lteie8 .ext-search__fields input {
   line-height: 26px;
 }
-/* line 16, ../sass/ie.scss */
+/* line 16, ../sass/ie - копия.scss */
 .lteie8 .top10 span {
   zoom: 1;
 }
-/* line 21, ../sass/ie.scss */
+/* line 21, ../sass/ie - копия.scss */
 .lteie8 .view-all a {
   zoom: 1;
 }
-/* line 25, ../sass/ie.scss */
+/* line 25, ../sass/ie - копия.scss */
 .lteie8 .search-filter {
   position: relative;
   zoom: 1;
-}
-/* line 30, ../sass/ie.scss */
-.lteie8 .txt-field input {
-  line-height: 30px;
 }

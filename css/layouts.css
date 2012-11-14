@@ -35,3 +35,42 @@
 .col-2_1 {
   float: left;
 }
+
+/* line 23, ../sass/layouts.scss */
+.col-3 {
+  float: left;
+  width: 32%;
+  margin-right: 10%;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 23, ../sass/layouts.scss */
+  .col-3 {
+    width: 42%;
+    margin-right: 4%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  /* line 23, ../sass/layouts.scss */
+  .col-3 {
+    width: 99%;
+    margin-right: 0;
+  }
+}
+
+/* line 36, ../sass/layouts.scss */
+.col-4 {
+  float: left;
+  width: 49%;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 36, ../sass/layouts.scss */
+  .col-4 {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  /* line 36, ../sass/layouts.scss */
+  .col-4 {
+    width: 99%;
+  }
+}

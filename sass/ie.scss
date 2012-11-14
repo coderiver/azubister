@@ -22,17 +22,13 @@
 			zoom: 1;
 		}
 	}	
-}
-
-/*only ie7*/
-.ie7 {
-	.view-all {
-		margin-top: 20px;
-	}	
-	.ext-search__fields {
+	.search-filter {
+		position: relative;
+		zoom: 1;
+	}
+	.txt-field {
 		input {
-			height: 22px;
-			line-height: 22px;
+			line-height: 30px;
 		}
 	}
 }

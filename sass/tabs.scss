@@ -1,0 +1,140 @@
+/*static pages*/
+.tabs {
+	overflow: hidden;
+}
+.tabs__nav {
+	padding: 2px 0 0 1px;
+	@include box-shadow(rgba(0,0,0,0.3) 0px -3px 2px -2px inset);
+	overflow: hidden;
+	li {
+		float: left;		
+	}
+	a {
+		display: block;
+		height: 38px;
+		padding: 0 12px;
+		margin-right: 7px;
+		line-height: 38px;
+		background: #f1f1f1;
+		@include box-shadow(rgba(0,0,0,0.3) 0px -3px 2px -2px inset);
+		@include border-radius(3px 3px 0 0);
+		color: #37559a;
+		font-weight: bold;
+		@include respond-to(step4) {
+			padding: 0 8px;
+			font-size: 12px;
+		}
+	}
+	.active {
+		@include box-shadow(rgba(0,0,0,0.3) 0px -1px 2px);
+		background: #fff;
+		color: #22b5f4;
+	}
+}
+.tabs__content {
+	margin-bottom: 60px;
+	overflow: hidden;
+	.h3 {
+		margin: 20px 0 10px 0;
+	}
+}
+/**/
+.about, .partners, .contacts, .imprint {
+	display: none;
+	overflow: hidden;
+}
+/*contacts*/
+.contacts__block {
+	position: relative;
+	padding: 20px 20px 100px 20px;
+	margin: 30px 0 20px 0;
+	background: #37559a;
+	@include box-shadow(rgba(40,61,112,0.5) 0px 0px 50px inset);
+	color: #fff;
+	b, strong {
+		display: block;
+	}
+	b {
+		font-size: 20px;
+	}
+	strong {
+		margin: 15px 0;
+		font-size: 28px;
+	}
+	span {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		border-bottom: 1px dotted #fff;
+		font-size: 12px;
+	}
+}
+/*about*/
+.about {
+	p {
+		margin-bottom: 20px;
+	}
+	.col-4 {
+		width: 51%;
+		@include respond-to(step1) {
+			width: 54%;
+		}
+		@include respond-to(step2) {
+			width: 99%;
+		}
+	}
+}
+.about__team {
+	overflow: hidden;
+	li {
+		float: left;
+		width: 150px;
+		margin: 0 20px 35px 0;
+	}
+	img {
+		margin-bottom: 15px;
+	}
+	a {
+		font-weight: bold;
+	}
+	span {
+		display: block;
+		padding: 5px 0;
+	}
+}
+.about__social {
+	overflow: hidden;
+	a {
+		float: left;
+		margin-right: 7px;
+	}
+}
+.about__social-fb {@include sized-sprite($icons, fb-ico);}
+.about__social-an {@include sized-sprite($icons, an-ico);}
+/*imprint*/
+.imprint {
+	width: 660px;
+	padding-top: 20px;
+	p {
+		margin-bottom: 20px;
+	}
+}
+/*partners*/
+.partners {
+	margin: 35px -30px 0 0;
+	overflow: hidden;
+	li {
+		float: left;
+		width: 150px;
+		margin-right: 20px;
+	}
+	img {
+		display: block;
+		border: 1px solid #c2c2c2;
+	}
+	span {
+		display: block;
+		margin: 10px 0 15px 0;
+		font-size: 12px;
+	}
+}

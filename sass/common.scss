@@ -11,6 +11,9 @@ body {
 	color: #666666;
 }
 /*resets*/
+p {
+	line-height: 1.5;
+}
 a img, fieldset {
 	border:none;
 }
@@ -24,6 +27,7 @@ li {
 input, textarea, button {
 	border: none;
 	outline: none;
+	font-family: Arial,sans-serif;
 }
 button {
 	line-height: 1;
@@ -714,5 +718,50 @@ table {
 		bottom: 0;
 		right: 50%;
 		margin-right: -150px;
+	}
+}
+/*form-txt*/
+.form-txt {
+	margin-bottom: 15px;
+	b {
+		display: block;
+		padding: 2px 0;
+	}
+	input, textarea {
+		width: 96%;			
+		border: 1px solid #cfcfcf;
+		@include box-shadow(rgba(0,0,0,0.3) 0px 0px 4px inset);
+		@include border-radius(2px);
+	}
+	input {
+		height: 30px;
+		padding: 0 2%;
+	}
+	textarea {
+		height: 150px;
+		padding: 2%;
+	}
+}
+.form-btn {
+	padding-bottom: 2px;
+	overflow: hidden;
+	button {
+		position: relative;
+		float: right;
+		height: 26px;
+		padding: 0 40px 0 45px;
+		background: #37559a;
+		@include background-image(linear-gradient(#37559a, #283d70));
+		@include border-radius(3px);
+		@include box-shadow(rgba(0,0,0,0.3) 0px 1px 2px);
+		font-size: 18px;
+		font-weight: bold;
+		color: #fff;
+	}
+	i {
+		position: absolute;
+		top: 7px;
+		left: 21px;
+		@include sized-sprite($icons, arr6);
 	}
 }

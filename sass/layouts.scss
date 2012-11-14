@@ -20,3 +20,26 @@
 .col-2_1 {
 	float: left;
 }
+.col-3 {
+	float: left;
+	width: 32%;
+	margin-right: 10%;
+	@include respond-to(step1) {
+		width: 42%;
+		margin-right: 4%;
+	}
+	@include respond-to(step2) {
+		width: 99%;
+		margin-right: 0;
+	}
+}
+.col-4 {
+	float: left;
+	width: 49%;
+	@include respond-to(step1) {
+		width: 50%;
+	}
+	@include respond-to(step2) {
+		width: 99%;
+	}
+}
