@@ -37,8 +37,15 @@ table {
 	border-spacing: 0;
 	border-collapse: collapse;
 }
-.h1 {
+.h1 {	
+	margin-bottom: 15px;
 	font-size: 30px;
+}
+.h1_do {
+	position: relative;
+	@include respond-to(step1) {
+		padding-bottom: 30px;
+	}
 }
 .h2 {
 	font-size: 24px;
@@ -240,7 +247,7 @@ table {
 }
 /*nav-extra*/
 .nav-more {
-	margin: 30px 0;
+	margin-bottom: 30px;
 	ul {
 		overflow: hidden;
 	}
@@ -701,6 +708,7 @@ table {
 	position: relative;
 	width: 300px;
 	height: 250px;
+	margin-bottom: 30px;
 	span {
 		position: absolute;
 		top: -15px;
@@ -723,8 +731,9 @@ table {
 /*form-txt*/
 .form-txt {
 	margin-bottom: 15px;
-	b {
+	label {
 		display: block;
+		font-weight: bold;
 		padding: 2px 0;
 	}
 	input, textarea {

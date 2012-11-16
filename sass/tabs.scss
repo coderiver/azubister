@@ -39,9 +39,14 @@
 		margin: 20px 0 10px 0;
 	}
 }
+.tabs__content_no-mb {
+	margin-bottom: 0px;
+}
 /**/
-.about, .partners, .contacts, .imprint {
+.tabs__item {
 	display: none;
+}
+.about, .partners, .contacts, .imprint {
 	overflow: hidden;
 }
 /*contacts*/
@@ -119,6 +124,9 @@
 	p {
 		margin-bottom: 20px;
 	}
+	@include respond-to(step1) {
+		width: 100%;
+	}
 }
 /*partners*/
 .partners {
@@ -137,5 +145,49 @@
 		display: block;
 		margin: 10px 0 15px 0;
 		font-size: 12px;
+	}
+}
+/*study-offers*/
+.study-offers, .apprenticeships {		
+	ul {
+		margin: 30px 0 20px 0;
+	}
+	li {
+		padding: 9px 0 9px 10px;
+		border-top: 1px dotted #cfcfcf;
+		overflow: hidden;
+		&:first-child {			
+			border: none;
+		}
+	}
+	img {
+		float: left;
+		margin-right: 10px;
+		border: 1px solid #cfcfcf;
+	}
+	.h4 {
+		margin-bottom: 5px;
+	}
+	span {
+		font-size: 12px;
+		a {
+			border-bottom: 1px dotted #666666;
+			color: #666;
+		}
+	}
+}
+/*apprenticeships*/
+.apprenticeships {
+	.top {
+		position: relative;
+		background: #f2fafe;
+		i {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			font-size: 10px;
+			font-style: normal;
+			color: #c2c2c2;
+		}
 	}
 }

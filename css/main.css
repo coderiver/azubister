@@ -162,7 +162,7 @@
   position: absolute;
   top: 13px;
   left: 10px;
-  background: url('../img/icons-s7615b20741.png') 0 -1760px no-repeat;
+  background: url('../img/icons-s37cb77e9d3.png') 0 -1848px no-repeat;
   width: 8px;
   height: 14px;
 }
@@ -445,7 +445,7 @@
   position: absolute;
   top: 10px;
   left: 5px;
-  background: url('../img/icons-s7615b20741.png') 0 -2042px no-repeat;
+  background: url('../img/icons-s37cb77e9d3.png') 0 -2156px no-repeat;
   width: 5px;
   height: 10px;
 }
@@ -490,10 +490,8 @@
   font-weight: normal;
 }
 /* line 314, ../sass/main.scss */
-.main-info b {
-  display: block;
+.main-info .h4 {
   margin: 25px 0 15px 0;
-  font-size: 18px;
 }
 @media only screen and (max-width: 680px) {
   /* line 305, ../sass/main.scss */

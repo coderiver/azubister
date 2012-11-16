@@ -311,10 +311,8 @@
 		font-size: 20px;
 		font-weight: normal;
 	}
-	b {
-		display: block;
+	.h4 {
 		margin: 25px 0 15px 0;
-		font-size: 18px;
 	}
 	@include respond-to(step3) {
 		padding: 0 0 285px 0;

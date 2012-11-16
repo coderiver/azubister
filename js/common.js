@@ -49,7 +49,7 @@ $('.tabs__nav a').click(function() {
 	if ($(this).hasClass('active')) {}
 	else {
 		$('.tabs__nav a').removeClass('active');
-		$('.about, .partners, .contacts, .imprint').slideUp(200);
+		$('.tabs__item').slideUp(200);
 		tab_val = $(this).attr('href');
 		$(this).addClass('active');
 		$('.'+tab_val).slideDown(200);
