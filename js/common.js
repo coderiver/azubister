@@ -57,4 +57,30 @@ $('.tabs__nav a').click(function() {
 	return false;
 });
 
+//company-places accordeon
+$('.company-places__prof').click(function() {
+	if ($(this).parent().hasClass('active')) {
+		$(this).parent().removeClass('active');
+		$(this).next().slideUp();
+	}
+	else {		
+		$(this).parent().addClass('active');
+		$(this).next().slideDown();
+	}	
+	// $('.company-places__list li').removeClass('active');
+	// $('.company-places__details').slideUp();
+});
+
+//company-places filter
+$('.company-places__filter-open').click(function() {
+	if ($(this).hasClass('company-places__filter-closed')) {
+		$('.commpany-places__filter-list').slideUp(200);
+		$(this).removeClass('company-places__filter-closed');
+	}
+	else {
+		$('.commpany-places__filter-list').slideDown(200);
+		$(this).addClass('company-places__filter-closed');
+	}
+});
+
 });

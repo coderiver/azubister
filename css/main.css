@@ -1,7 +1,7 @@
 /* BACKGROUND SIZE */
 /* ROTATE*/
 /* TRANSITION */
-/* line 93, ../sass/_base.scss */
+/* line 94, ../sass/_base.scss */
 .app__item {
   background: #f1f1f1;
   -webkit-border-radius: 3px;
@@ -162,7 +162,7 @@
   position: absolute;
   top: 13px;
   left: 10px;
-  background: url('../img/icons-s37cb77e9d3.png') 0 -1848px no-repeat;
+  background: url('../img/icons-s3d05d438a4.png') 0 -2041px no-repeat;
   width: 8px;
   height: 14px;
 }
@@ -445,7 +445,7 @@
   position: absolute;
   top: 10px;
   left: 5px;
-  background: url('../img/icons-s37cb77e9d3.png') 0 -2156px no-repeat;
+  background: url('../img/icons-s3d05d438a4.png') 0 -2428px no-repeat;
   width: 5px;
   height: 10px;
 }

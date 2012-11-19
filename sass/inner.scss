@@ -712,7 +712,92 @@
 	}
 }
 /*company-profile*/
+.company {
+	margin-bottom: 20px;
+}
 .company-profile {
+	position: relative;
 	padding: 20px;
 	@extend %block;
+	img {
+		float: left;
+		margin-right: 20px;
+		@include respond-to(step4) {
+			float: none;
+			margin-bottom: 20px;
+		}
+	}
+}
+.company-profile__top {
+	position: absolute;
+	top: -15px;
+	right: 5px;
+	@include sized-sprite($icons, top);
+}
+.company-profile__detail {
+	overflow: hidden;
+	.h2 {
+		margin-bottom: 25px;
+		color: $blue;
+	}
+	ul {
+		margin: 0 -15% 20px 0;
+		overflow: hidden;
+	}
+	li {
+		float: left;
+		width: 45%;
+		margin: 0 0 6px 0;
+		font-size: 12px;
+		b {
+			display: inline-block;
+			width: 50%;
+		}
+		@include respond-to(step3) {
+			width: 100%;
+		}
+	}
+}
+.company-adress {
+	padding: 20px;
+	@extend %block-blue;
+	strong {
+		display: block;
+		position: relative;
+		padding-left: 28px;
+		font-size: 24px;
+		i {
+			position: absolute;
+			top: 6px;
+			left: 0;
+			@include sized-sprite($icons, phone);
+		}
+	}
+	ul {
+		margin: 20px 0 -4px 0;
+	}
+	li {
+		margin-bottom: 6px;
+	}
+	a {
+		color: #fff;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.company-adress__social {
+		margin-bottom: 20px;
+		overflow: hidden;
+		a {
+			float: left;
+			margin-right: 7px;
+		}
+	}
+	.company-adress__fb {@include sized-sprite($icons, fb-w);}
+	.company-adress__tw {@include sized-sprite($icons, tw-w);}
+	.company-adress__an {@include sized-sprite($icons, an-w);}
+	.company-adress__gg {@include sized-sprite($icons, gg-w);}
+	@include respond-to(step1) {
+		margin-top: 20px;
+	}
 }

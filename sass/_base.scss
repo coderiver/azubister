@@ -4,7 +4,8 @@
 $experimental-support-for-svg: true;
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
-
+//
+$blue: #37559a;
 // responsive
 @mixin respond-to($media) {
   @if $media == step {
@@ -95,6 +96,11 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
   background: #f1f1f1;
   @include border-radius(3px);
   @include box-shadow(rgba(0,0,0,0.3) 0px 2px 1px);
+}
+%block-blue {
+  background: #37559a;
+  @include box-shadow(rgba(40,61,112,0.5) 0px 0px 50px inset);
+  color: #fff;
 }
 %nav-more {
   height: 40px;

@@ -1,77 +1,635 @@
-/*
-Syntax error: Undefined mixin 'box-shadow'.
-        on line 7 of D:/Git/azubister/sass/tabs.scss, in `box-shadow'
-        from line 7 of D:/Git/azubister/sass/tabs.scss
+/* BACKGROUND SIZE */
+/* ROTATE*/
+/* TRANSITION */
+/* line 94, ../sass/_base.scss */
+.company-places__filter, .company-places__makers {
+  background: #f1f1f1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 1px;
+}
 
-Backtrace:
-D:/Git/azubister/sass/tabs.scss:7:in `box-shadow'
-D:/Git/azubister/sass/tabs.scss:7
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:170:in `visit_mixin'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:20:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:259:in `visit_rule'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:20:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:29:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:41:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:28:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:49:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:20:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/engine.rb:309:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.244/lib/sass/engine.rb:256:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-C:/Ruby193/bin/compass:23:in `load'
-C:/Ruby193/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'box-shadow'.\A         on line 7 of D:/Git/azubister/sass/tabs.scss, in `box-shadow'\A         from line 7 of D:/Git/azubister/sass/tabs.scss"; }
+/* line 99, ../sass/_base.scss */
+.contacts__block {
+  background: #37559a;
+  -webkit-box-shadow: rgba(40, 61, 112, 0.5) 0px 0px 50px inset;
+  -moz-box-shadow: rgba(40, 61, 112, 0.5) 0px 0px 50px inset;
+  box-shadow: rgba(40, 61, 112, 0.5) 0px 0px 50px inset;
+  color: #fff;
+}
+
+/*static pages*/
+/* line 3, ../sass/tabs.scss */
+.tabs {
+  overflow: hidden;
+}
+
+/* line 6, ../sass/tabs.scss */
+.tabs__nav {
+  padding: 2px 0 0 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 2px -2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 2px -2px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 2px -2px inset;
+  overflow: hidden;
+}
+/* line 10, ../sass/tabs.scss */
+.tabs__nav li {
+  float: left;
+}
+/* line 13, ../sass/tabs.scss */
+.tabs__nav a {
+  display: block;
+  height: 38px;
+  padding: 0 12px;
+  margin-right: 7px;
+  line-height: 38px;
+  background: #f1f1f1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 2px -2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 2px -2px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 2px -2px inset;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  color: #37559a;
+  font-weight: bold;
+}
+@media only screen and (max-width: 460px) {
+  /* line 13, ../sass/tabs.scss */
+  .tabs__nav a {
+    padding: 0 8px;
+    font-size: 12px;
+  }
+}
+/* line 29, ../sass/tabs.scss */
+.tabs__nav .active {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px -1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px -1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -1px 2px;
+  background: #fff;
+  color: #22b5f4;
+}
+
+/* line 35, ../sass/tabs.scss */
+.tabs__content {
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+/* line 38, ../sass/tabs.scss */
+.tabs__content .h3 {
+  margin: 20px 0 10px 0;
+}
+
+/* line 42, ../sass/tabs.scss */
+.tabs__content_no-mb {
+  margin-bottom: 0px;
+}
+
+/**/
+/* line 46, ../sass/tabs.scss */
+.tabs__item {
+  display: none;
+}
+
+/* line 49, ../sass/tabs.scss */
+.about, .partners, .contacts, .imprint {
+  overflow: hidden;
+}
+
+/*contacts*/
+/* line 53, ../sass/tabs.scss */
+.contacts__block {
+  position: relative;
+  padding: 20px 20px 100px 20px;
+  margin: 30px 0 20px 0;
+}
+/* line 58, ../sass/tabs.scss */
+.contacts__block b, .contacts__block strong {
+  display: block;
+}
+/* line 61, ../sass/tabs.scss */
+.contacts__block b {
+  font-size: 20px;
+}
+/* line 64, ../sass/tabs.scss */
+.contacts__block strong {
+  margin: 15px 0;
+  font-size: 28px;
+}
+/* line 68, ../sass/tabs.scss */
+.contacts__block span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-bottom: 1px dotted #fff;
+  font-size: 12px;
+}
+
+/*about*/
+/* line 78, ../sass/tabs.scss */
+.about p {
+  margin-bottom: 20px;
+}
+/* line 81, ../sass/tabs.scss */
+.about .col-4 {
+  width: 51%;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 81, ../sass/tabs.scss */
+  .about .col-4 {
+    width: 54%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  /* line 81, ../sass/tabs.scss */
+  .about .col-4 {
+    width: 99%;
+  }
+}
+
+/* line 91, ../sass/tabs.scss */
+.about__team {
+  overflow: hidden;
+}
+/* line 93, ../sass/tabs.scss */
+.about__team li {
+  float: left;
+  width: 150px;
+  margin: 0 20px 35px 0;
+}
+/* line 98, ../sass/tabs.scss */
+.about__team img {
+  margin-bottom: 15px;
+}
+/* line 101, ../sass/tabs.scss */
+.about__team a {
+  font-weight: bold;
+}
+/* line 104, ../sass/tabs.scss */
+.about__team span {
+  display: block;
+  padding: 5px 0;
+}
+
+/* line 109, ../sass/tabs.scss */
+.about__social {
+  overflow: hidden;
+}
+/* line 111, ../sass/tabs.scss */
+.about__social a {
+  float: left;
+  margin-right: 7px;
+}
+
+/* line 116, ../sass/tabs.scss */
+.about__social-fb {
+  background: url('../img/icons-se5b92bf92d.png') 0 -1901px no-repeat;
+  width: 21px;
+  height: 21px;
+}
+
+/* line 117, ../sass/tabs.scss */
+.about__social-an {
+  background: url('../img/icons-se5b92bf92d.png') 0 -1809px no-repeat;
+  width: 21px;
+  height: 21px;
+}
+
+/*imprint*/
+/* line 119, ../sass/tabs.scss */
+.imprint {
+  width: 660px;
+  padding-top: 20px;
+}
+/* line 122, ../sass/tabs.scss */
+.imprint p {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 119, ../sass/tabs.scss */
+  .imprint {
+    width: 100%;
+  }
+}
+
+/*partners*/
+/* line 130, ../sass/tabs.scss */
+.partners {
+  margin: 35px -30px 0 0;
+  overflow: hidden;
+}
+/* line 133, ../sass/tabs.scss */
+.partners li {
+  float: left;
+  width: 150px;
+  margin-right: 20px;
+}
+/* line 138, ../sass/tabs.scss */
+.partners img {
+  display: block;
+  border: 1px solid #c2c2c2;
+}
+/* line 142, ../sass/tabs.scss */
+.partners span {
+  display: block;
+  margin: 10px 0 15px 0;
+  font-size: 12px;
+}
+
+/*study-offers*/
+/* line 150, ../sass/tabs.scss */
+.study-offers ul, .apprenticeships ul {
+  margin: 30px 0 20px 0;
+}
+/* line 153, ../sass/tabs.scss */
+.study-offers li, .apprenticeships li {
+  padding: 9px 0 9px 10px;
+  border-top: 1px dotted #cfcfcf;
+  overflow: hidden;
+}
+/* line 157, ../sass/tabs.scss */
+.study-offers li:first-child, .apprenticeships li:first-child {
+  border: none;
+}
+/* line 161, ../sass/tabs.scss */
+.study-offers img, .apprenticeships img {
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #cfcfcf;
+}
+/* line 166, ../sass/tabs.scss */
+.study-offers .h4, .apprenticeships .h4 {
+  margin-bottom: 5px;
+}
+/* line 169, ../sass/tabs.scss */
+.study-offers span, .apprenticeships span {
+  font-size: 12px;
+}
+/* line 171, ../sass/tabs.scss */
+.study-offers span a, .apprenticeships span a {
+  border-bottom: 1px dotted #666666;
+  color: #666;
+}
+
+/*apprenticeships*/
+/* line 179, ../sass/tabs.scss */
+.apprenticeships .top {
+  position: relative;
+  background: #f2fafe;
+}
+/* line 182, ../sass/tabs.scss */
+.apprenticeships .top i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-style: normal;
+  color: #c2c2c2;
+}
+
+/*company-any-info*/
+/* line 193, ../sass/tabs.scss */
+.company-any-info {
+  width: 66%;
+}
+/* line 195, ../sass/tabs.scss */
+.company-any-info ul {
+  margin: 10px 0 20px 0;
+}
+/* line 198, ../sass/tabs.scss */
+.company-any-info li {
+  padding-top: 19px;
+  margin-top: 19px;
+  border-top: 1px dotted #cfcfcf;
+  overflow: hidden;
+}
+/* line 203, ../sass/tabs.scss */
+.company-any-info li:first-child {
+  margin-top: 0px;
+  border: none;
+}
+/* line 208, ../sass/tabs.scss */
+.company-any-info .h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+/* line 211, ../sass/tabs.scss */
+.company-any-info .h4 a {
+  color: #666666;
+}
+
+/* line 216, ../sass/tabs.scss */
+.company-any-info__pic {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+/* line 220, ../sass/tabs.scss */
+.company-any-info__pic img, .company-any-info__pic span {
+  display: block;
+}
+/* line 223, ../sass/tabs.scss */
+.company-any-info__pic span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-right: 10px;
+  text-align: right;
+  height: 17px;
+  line-height: 17px;
+  background: rgba(102, 102, 102, 0.7);
+  font-size: 9px;
+  color: #fff;
+}
+
+/*company-places*/
+/* line 238, ../sass/tabs.scss */
+.company-places {
+  margin-top: 20px;
+}
+
+/*company-places__list*/
+/* line 242, ../sass/tabs.scss */
+.company-places__list {
+  margin-bottom: 30px;
+}
+/* line 244, ../sass/tabs.scss */
+.company-places__list .h5 {
+  height: 27px;
+  line-height: 27px;
+  color: #666666;
+}
+/* line 249, ../sass/tabs.scss */
+.company-places__list li {
+  border-bottom: 1px dotted #cfcfcf;
+}
+/* line 252, ../sass/tabs.scss */
+.company-places__list .active {
+  background: #e8f7fe;
+}
+/* line 254, ../sass/tabs.scss */
+.company-places__list .active .company-places__prof {
+  color: #22b5f4;
+}
+/* line 258, ../sass/tabs.scss */
+.company-places__list td {
+  padding: 2px 0;
+  vertical-align: top;
+}
+/* line 262, ../sass/tabs.scss */
+.company-places__list a {
+  position: relative;
+  text-decoration: underline;
+  color: #666666;
+}
+/* line 266, ../sass/tabs.scss */
+.company-places__list a i {
+  position: absolute;
+  top: 2px;
+  right: -17px;
+  background: url('../img/icons-se5b92bf92d.png') 0 -2343px no-repeat;
+  width: 11px;
+  height: 11px;
+}
+
+/* line 274, ../sass/tabs.scss */
+.company-places__prof {
+  display: block;
+  padding: 3px 0 3px 6px;
+  line-height: 1.5;
+  color: #37559a;
+  cursor: pointer;
+}
+
+/* line 281, ../sass/tabs.scss */
+.company-places__details {
+  display: none;
+  width: 280px;
+  padding: 5px 15px 10px 25px;
+  font-size: 12px;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 281, ../sass/tabs.scss */
+  .company-places__details {
+    width: auto;
+  }
+}
+
+/* line 290, ../sass/tabs.scss */
+.company-places__detail {
+  width: 70px;
+  font-weight: bold;
+}
+
+/*company-places__filter*/
+/* line 295, ../sass/tabs.scss */
+.company-places__filter {
+  position: relative;
+  z-index: 5;
+}
+/* line 299, ../sass/tabs.scss */
+.company-places__filter form {
+  position: relative;
+  padding: 10px 150px 10px 10px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 299, ../sass/tabs.scss */
+  .company-places__filter form {
+    padding: 10px;
+  }
+}
+
+/* line 307, ../sass/tabs.scss */
+.company-places__filter-open {
+  position: absolute;
+  top: 0;
+  right: -140px;
+  padding-right: 17px;
+  font-size: 12px;
+  cursor: pointer;
+}
+/* line 314, ../sass/tabs.scss */
+.company-places__filter-open i {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  background: url('../img/icons-se5b92bf92d.png') 0 -2479px no-repeat;
+  width: 11px;
+  height: 11px;
+}
+@media only screen and (max-width: 680px) {
+  /* line 307, ../sass/tabs.scss */
+  .company-places__filter-open {
+    top: 36px;
+    left: 0;
+    right: auto;
+  }
+}
+
+/* line 327, ../sass/tabs.scss */
+.company-places__filter-closed i {
+  background: url('../img/icons-se5b92bf92d.png') 0 -2500px no-repeat;
+  width: 11px;
+  height: 11px;
+}
+
+/* line 331, ../sass/tabs.scss */
+.company-places__zoom {
+  position: relative;
+  height: 26px;
+}
+/* line 334, ../sass/tabs.scss */
+.company-places__zoom input, .company-places__zoom button {
+  position: absolute;
+  top: 0;
+  height: 26px;
+}
+/* line 339, ../sass/tabs.scss */
+.company-places__zoom input {
+  left: 0;
+  width: 68%;
+  padding: 0 3% 0 1%;
+  -webkit-box-shadow: #666666 0px 1px 3px inset;
+  -moz-box-shadow: #666666 0px 1px 3px inset;
+  box-shadow: #666666 0px 1px 3px inset;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+/* line 346, ../sass/tabs.scss */
+.company-places__zoom button {
+  right: 0;
+  width: 30%;
+  background: #37559a;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM3NTU5YSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI4M2U3MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #37559a), color-stop(100%, #283e71));
+  background-image: -webkit-linear-gradient(#37559a, #283e71);
+  background-image: -moz-linear-gradient(#37559a, #283e71);
+  background-image: -o-linear-gradient(#37559a, #283e71);
+  background-image: linear-gradient(#37559a, #283e71);
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -ms-border-radius: 0 3px 3px 0;
+  -o-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+@media only screen and (max-width: 680px) {
+  /* line 331, ../sass/tabs.scss */
+  .company-places__zoom {
+    padding-bottom: 25px;
+  }
+}
+
+/* line 360, ../sass/tabs.scss */
+.commpany-places__filter-list {
+  display: none;
+  position: relative;
+  padding: 0 0 0 160px;
+  margin: 10px 0 -10px 0;
+  font-size: 12px;
+  zoom: 1;
+}
+/* line 366, ../sass/tabs.scss */
+.commpany-places__filter-list b {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 371, ../sass/tabs.scss */
+.commpany-places__filter-list ul {
+  overflow: hidden;
+}
+/* line 374, ../sass/tabs.scss */
+.commpany-places__filter-list li {
+  position: relative;
+  float: left;
+  width: 150px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+/* line 381, ../sass/tabs.scss */
+.commpany-places__filter-list input {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 388, ../sass/tabs.scss */
+.company-places__map {
+  position: relative;
+}
+/* line 390, ../sass/tabs.scss */
+.company-places__map span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 10px;
+  background: rgba(102, 102, 102, 0.7);
+  font-size: 12px;
+  color: #fff;
+}
+/* line 402, ../sass/tabs.scss */
+.company-places__map img {
+  display: block;
+  width: 100%;
+}
+
+/* line 407, ../sass/tabs.scss */
+.company-places__makers {
+  padding: 5px 10px 10px 10px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+/* line 412, ../sass/tabs.scss */
+.company-places__makers li {
+  position: relative;
+  float: left;
+  height: 21px;
+  margin-top: 10px;
+  line-height: 21px;
+  padding: 0 30px 0 20px;
+  font-size: 10px;
+}
+/* line 421, ../sass/tabs.scss */
+.company-places__makers i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 428, ../sass/tabs.scss */
+.company-places__marker-1 i {
+  background: url('../img/icons-se5b92bf92d.png') 0 -2046px no-repeat;
+  width: 12px;
+  height: 21px;
+}
+
+/* line 433, ../sass/tabs.scss */
+.company-places__marker-2 i {
+  background: url('../img/icons-se5b92bf92d.png') 0 -2077px no-repeat;
+  width: 12px;
+  height: 21px;
+}
+
+/* line 438, ../sass/tabs.scss */
+.company-places__marker-3 i {
+  background: url('../img/icons-se5b92bf92d.png') 0 -2015px no-repeat;
+  width: 12px;
+  height: 21px;
+}
