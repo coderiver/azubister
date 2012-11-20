@@ -81,6 +81,7 @@ table {
 .header-out {
 	position: relative;
 	width: 100%;
+	margin-bottom: 8px;
 	background: #37559a;
 	@include background-image(linear-gradient(#37559a, #283d70));	
 }
@@ -641,7 +642,7 @@ table {
 }
 /*breadcrumps*/
 .breadcrumps {
-	margin: 8px 0 24px 0;
+	margin: 0 0 24px 0;
 	overflow: hidden;
 	li {
 		position: relative;
@@ -729,6 +730,13 @@ table {
 		bottom: 0;
 		right: 50%;
 		margin-right: -150px;
+	}
+}
+.advert_left {
+	margin: 30px 0 30px 20px;
+	background: #f07fbc;
+	@include respond-to(step1) {
+		margin: 30px 0;
 	}
 }
 /*form-txt*/

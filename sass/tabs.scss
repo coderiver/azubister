@@ -58,20 +58,27 @@
 	b, strong {
 		display: block;
 	}
-	b {
-		font-size: 20px;
+	a {
+		color: #fff;
 	}
 	strong {
 		margin: 15px 0;
 		font-size: 28px;
 	}
-	span {
-		position: absolute;
-		right: 20px;
-		bottom: 20px;
-		border-bottom: 1px dotted #fff;
-		font-size: 12px;
-	}
+}
+.contacts__email {
+	font-size: 20px;
+}
+strong {
+	margin: 15px 0;
+	font-size: 28px;
+}
+.contacts__personal {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	border-bottom: 1px dotted #fff;
+	font-size: 12px;
 }
 /*about*/
 .about {

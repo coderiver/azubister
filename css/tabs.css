@@ -114,16 +114,28 @@
   display: block;
 }
 /* line 61, ../sass/tabs.scss */
-.contacts__block b {
-  font-size: 20px;
+.contacts__block a {
+  color: #fff;
 }
 /* line 64, ../sass/tabs.scss */
 .contacts__block strong {
   margin: 15px 0;
   font-size: 28px;
 }
-/* line 68, ../sass/tabs.scss */
-.contacts__block span {
+
+/* line 69, ../sass/tabs.scss */
+.contacts__email {
+  font-size: 20px;
+}
+
+/* line 72, ../sass/tabs.scss */
+strong {
+  margin: 15px 0;
+  font-size: 28px;
+}
+
+/* line 76, ../sass/tabs.scss */
+.contacts__personal {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -132,69 +144,69 @@
 }
 
 /*about*/
-/* line 78, ../sass/tabs.scss */
+/* line 85, ../sass/tabs.scss */
 .about p {
   margin-bottom: 20px;
 }
-/* line 81, ../sass/tabs.scss */
+/* line 88, ../sass/tabs.scss */
 .about .col-4 {
   width: 51%;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 81, ../sass/tabs.scss */
+  /* line 88, ../sass/tabs.scss */
   .about .col-4 {
     width: 54%;
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 81, ../sass/tabs.scss */
+  /* line 88, ../sass/tabs.scss */
   .about .col-4 {
     width: 99%;
   }
 }
 
-/* line 91, ../sass/tabs.scss */
+/* line 98, ../sass/tabs.scss */
 .about__team {
   overflow: hidden;
 }
-/* line 93, ../sass/tabs.scss */
+/* line 100, ../sass/tabs.scss */
 .about__team li {
   float: left;
   width: 150px;
   margin: 0 20px 35px 0;
 }
-/* line 98, ../sass/tabs.scss */
+/* line 105, ../sass/tabs.scss */
 .about__team img {
   margin-bottom: 15px;
 }
-/* line 101, ../sass/tabs.scss */
+/* line 108, ../sass/tabs.scss */
 .about__team a {
   font-weight: bold;
 }
-/* line 104, ../sass/tabs.scss */
+/* line 111, ../sass/tabs.scss */
 .about__team span {
   display: block;
   padding: 5px 0;
 }
 
-/* line 109, ../sass/tabs.scss */
+/* line 116, ../sass/tabs.scss */
 .about__social {
   overflow: hidden;
 }
-/* line 111, ../sass/tabs.scss */
+/* line 118, ../sass/tabs.scss */
 .about__social a {
   float: left;
   margin-right: 7px;
 }
 
-/* line 116, ../sass/tabs.scss */
+/* line 123, ../sass/tabs.scss */
 .about__social-fb {
   background: url('../img/icons-se5b92bf92d.png') 0 -1901px no-repeat;
   width: 21px;
   height: 21px;
 }
 
-/* line 117, ../sass/tabs.scss */
+/* line 124, ../sass/tabs.scss */
 .about__social-an {
   background: url('../img/icons-se5b92bf92d.png') 0 -1809px no-repeat;
   width: 21px;
@@ -202,40 +214,40 @@
 }
 
 /*imprint*/
-/* line 119, ../sass/tabs.scss */
+/* line 126, ../sass/tabs.scss */
 .imprint {
   width: 660px;
   padding-top: 20px;
 }
-/* line 122, ../sass/tabs.scss */
+/* line 129, ../sass/tabs.scss */
 .imprint p {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 119, ../sass/tabs.scss */
+  /* line 126, ../sass/tabs.scss */
   .imprint {
     width: 100%;
   }
 }
 
 /*partners*/
-/* line 130, ../sass/tabs.scss */
+/* line 137, ../sass/tabs.scss */
 .partners {
   margin: 35px -30px 0 0;
   overflow: hidden;
 }
-/* line 133, ../sass/tabs.scss */
+/* line 140, ../sass/tabs.scss */
 .partners li {
   float: left;
   width: 150px;
   margin-right: 20px;
 }
-/* line 138, ../sass/tabs.scss */
+/* line 145, ../sass/tabs.scss */
 .partners img {
   display: block;
   border: 1px solid #c2c2c2;
 }
-/* line 142, ../sass/tabs.scss */
+/* line 149, ../sass/tabs.scss */
 .partners span {
   display: block;
   margin: 10px 0 15px 0;
@@ -243,47 +255,47 @@
 }
 
 /*study-offers*/
-/* line 150, ../sass/tabs.scss */
+/* line 157, ../sass/tabs.scss */
 .study-offers ul, .apprenticeships ul {
   margin: 30px 0 20px 0;
 }
-/* line 153, ../sass/tabs.scss */
+/* line 160, ../sass/tabs.scss */
 .study-offers li, .apprenticeships li {
   padding: 9px 0 9px 10px;
   border-top: 1px dotted #cfcfcf;
   overflow: hidden;
 }
-/* line 157, ../sass/tabs.scss */
+/* line 164, ../sass/tabs.scss */
 .study-offers li:first-child, .apprenticeships li:first-child {
   border: none;
 }
-/* line 161, ../sass/tabs.scss */
+/* line 168, ../sass/tabs.scss */
 .study-offers img, .apprenticeships img {
   float: left;
   margin-right: 10px;
   border: 1px solid #cfcfcf;
 }
-/* line 166, ../sass/tabs.scss */
+/* line 173, ../sass/tabs.scss */
 .study-offers .h4, .apprenticeships .h4 {
   margin-bottom: 5px;
 }
-/* line 169, ../sass/tabs.scss */
+/* line 176, ../sass/tabs.scss */
 .study-offers span, .apprenticeships span {
   font-size: 12px;
 }
-/* line 171, ../sass/tabs.scss */
+/* line 178, ../sass/tabs.scss */
 .study-offers span a, .apprenticeships span a {
   border-bottom: 1px dotted #666666;
   color: #666;
 }
 
 /*apprenticeships*/
-/* line 179, ../sass/tabs.scss */
+/* line 186, ../sass/tabs.scss */
 .apprenticeships .top {
   position: relative;
   background: #f2fafe;
 }
-/* line 182, ../sass/tabs.scss */
+/* line 189, ../sass/tabs.scss */
 .apprenticeships .top i {
   position: absolute;
   top: 10px;
@@ -294,47 +306,47 @@
 }
 
 /*company-any-info*/
-/* line 193, ../sass/tabs.scss */
+/* line 200, ../sass/tabs.scss */
 .company-any-info {
   width: 66%;
 }
-/* line 195, ../sass/tabs.scss */
+/* line 202, ../sass/tabs.scss */
 .company-any-info ul {
   margin: 10px 0 20px 0;
 }
-/* line 198, ../sass/tabs.scss */
+/* line 205, ../sass/tabs.scss */
 .company-any-info li {
   padding-top: 19px;
   margin-top: 19px;
   border-top: 1px dotted #cfcfcf;
   overflow: hidden;
 }
-/* line 203, ../sass/tabs.scss */
+/* line 210, ../sass/tabs.scss */
 .company-any-info li:first-child {
   margin-top: 0px;
   border: none;
 }
-/* line 208, ../sass/tabs.scss */
+/* line 215, ../sass/tabs.scss */
 .company-any-info .h4 {
   margin-bottom: 10px;
   font-weight: normal;
 }
-/* line 211, ../sass/tabs.scss */
+/* line 218, ../sass/tabs.scss */
 .company-any-info .h4 a {
   color: #666666;
 }
 
-/* line 216, ../sass/tabs.scss */
+/* line 223, ../sass/tabs.scss */
 .company-any-info__pic {
   position: relative;
   float: left;
   margin-right: 20px;
 }
-/* line 220, ../sass/tabs.scss */
+/* line 227, ../sass/tabs.scss */
 .company-any-info__pic img, .company-any-info__pic span {
   display: block;
 }
-/* line 223, ../sass/tabs.scss */
+/* line 230, ../sass/tabs.scss */
 .company-any-info__pic span {
   position: absolute;
   bottom: 0;
@@ -350,46 +362,46 @@
 }
 
 /*company-places*/
-/* line 238, ../sass/tabs.scss */
+/* line 245, ../sass/tabs.scss */
 .company-places {
   margin-top: 20px;
 }
 
 /*company-places__list*/
-/* line 242, ../sass/tabs.scss */
+/* line 249, ../sass/tabs.scss */
 .company-places__list {
   margin-bottom: 30px;
 }
-/* line 244, ../sass/tabs.scss */
+/* line 251, ../sass/tabs.scss */
 .company-places__list .h5 {
   height: 27px;
   line-height: 27px;
   color: #666666;
 }
-/* line 249, ../sass/tabs.scss */
+/* line 256, ../sass/tabs.scss */
 .company-places__list li {
   border-bottom: 1px dotted #cfcfcf;
 }
-/* line 252, ../sass/tabs.scss */
+/* line 259, ../sass/tabs.scss */
 .company-places__list .active {
   background: #e8f7fe;
 }
-/* line 254, ../sass/tabs.scss */
+/* line 261, ../sass/tabs.scss */
 .company-places__list .active .company-places__prof {
   color: #22b5f4;
 }
-/* line 258, ../sass/tabs.scss */
+/* line 265, ../sass/tabs.scss */
 .company-places__list td {
   padding: 2px 0;
   vertical-align: top;
 }
-/* line 262, ../sass/tabs.scss */
+/* line 269, ../sass/tabs.scss */
 .company-places__list a {
   position: relative;
   text-decoration: underline;
   color: #666666;
 }
-/* line 266, ../sass/tabs.scss */
+/* line 273, ../sass/tabs.scss */
 .company-places__list a i {
   position: absolute;
   top: 2px;
@@ -399,7 +411,7 @@
   height: 11px;
 }
 
-/* line 274, ../sass/tabs.scss */
+/* line 281, ../sass/tabs.scss */
 .company-places__prof {
   display: block;
   padding: 3px 0 3px 6px;
@@ -408,7 +420,7 @@
   cursor: pointer;
 }
 
-/* line 281, ../sass/tabs.scss */
+/* line 288, ../sass/tabs.scss */
 .company-places__details {
   display: none;
   width: 280px;
@@ -416,37 +428,37 @@
   font-size: 12px;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 281, ../sass/tabs.scss */
+  /* line 288, ../sass/tabs.scss */
   .company-places__details {
     width: auto;
   }
 }
 
-/* line 290, ../sass/tabs.scss */
+/* line 297, ../sass/tabs.scss */
 .company-places__detail {
   width: 70px;
   font-weight: bold;
 }
 
 /*company-places__filter*/
-/* line 295, ../sass/tabs.scss */
+/* line 302, ../sass/tabs.scss */
 .company-places__filter {
   position: relative;
   z-index: 5;
 }
-/* line 299, ../sass/tabs.scss */
+/* line 306, ../sass/tabs.scss */
 .company-places__filter form {
   position: relative;
   padding: 10px 150px 10px 10px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 299, ../sass/tabs.scss */
+  /* line 306, ../sass/tabs.scss */
   .company-places__filter form {
     padding: 10px;
   }
 }
 
-/* line 307, ../sass/tabs.scss */
+/* line 314, ../sass/tabs.scss */
 .company-places__filter-open {
   position: absolute;
   top: 0;
@@ -455,7 +467,7 @@
   font-size: 12px;
   cursor: pointer;
 }
-/* line 314, ../sass/tabs.scss */
+/* line 321, ../sass/tabs.scss */
 .company-places__filter-open i {
   position: absolute;
   top: 1px;
@@ -465,7 +477,7 @@
   height: 11px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 307, ../sass/tabs.scss */
+  /* line 314, ../sass/tabs.scss */
   .company-places__filter-open {
     top: 36px;
     left: 0;
@@ -473,25 +485,25 @@
   }
 }
 
-/* line 327, ../sass/tabs.scss */
+/* line 334, ../sass/tabs.scss */
 .company-places__filter-closed i {
   background: url('../img/icons-se5b92bf92d.png') 0 -2500px no-repeat;
   width: 11px;
   height: 11px;
 }
 
-/* line 331, ../sass/tabs.scss */
+/* line 338, ../sass/tabs.scss */
 .company-places__zoom {
   position: relative;
   height: 26px;
 }
-/* line 334, ../sass/tabs.scss */
+/* line 341, ../sass/tabs.scss */
 .company-places__zoom input, .company-places__zoom button {
   position: absolute;
   top: 0;
   height: 26px;
 }
-/* line 339, ../sass/tabs.scss */
+/* line 346, ../sass/tabs.scss */
 .company-places__zoom input {
   left: 0;
   width: 68%;
@@ -505,7 +517,7 @@
   -o-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 346, ../sass/tabs.scss */
+/* line 353, ../sass/tabs.scss */
 .company-places__zoom button {
   right: 0;
   width: 30%;
@@ -527,13 +539,13 @@
   color: #fff;
 }
 @media only screen and (max-width: 680px) {
-  /* line 331, ../sass/tabs.scss */
+  /* line 338, ../sass/tabs.scss */
   .company-places__zoom {
     padding-bottom: 25px;
   }
 }
 
-/* line 360, ../sass/tabs.scss */
+/* line 367, ../sass/tabs.scss */
 .commpany-places__filter-list {
   display: none;
   position: relative;
@@ -542,17 +554,17 @@
   font-size: 12px;
   zoom: 1;
 }
-/* line 366, ../sass/tabs.scss */
+/* line 373, ../sass/tabs.scss */
 .commpany-places__filter-list b {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 371, ../sass/tabs.scss */
+/* line 378, ../sass/tabs.scss */
 .commpany-places__filter-list ul {
   overflow: hidden;
 }
-/* line 374, ../sass/tabs.scss */
+/* line 381, ../sass/tabs.scss */
 .commpany-places__filter-list li {
   position: relative;
   float: left;
@@ -560,18 +572,18 @@
   padding-left: 20px;
   margin-bottom: 10px;
 }
-/* line 381, ../sass/tabs.scss */
+/* line 388, ../sass/tabs.scss */
 .commpany-places__filter-list input {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 388, ../sass/tabs.scss */
+/* line 395, ../sass/tabs.scss */
 .company-places__map {
   position: relative;
 }
-/* line 390, ../sass/tabs.scss */
+/* line 397, ../sass/tabs.scss */
 .company-places__map span {
   position: absolute;
   top: 0;
@@ -584,19 +596,19 @@
   font-size: 12px;
   color: #fff;
 }
-/* line 402, ../sass/tabs.scss */
+/* line 409, ../sass/tabs.scss */
 .company-places__map img {
   display: block;
   width: 100%;
 }
 
-/* line 407, ../sass/tabs.scss */
+/* line 414, ../sass/tabs.scss */
 .company-places__makers {
   padding: 5px 10px 10px 10px;
   margin-bottom: 5px;
   overflow: hidden;
 }
-/* line 412, ../sass/tabs.scss */
+/* line 419, ../sass/tabs.scss */
 .company-places__makers li {
   position: relative;
   float: left;
@@ -606,28 +618,28 @@
   padding: 0 30px 0 20px;
   font-size: 10px;
 }
-/* line 421, ../sass/tabs.scss */
+/* line 428, ../sass/tabs.scss */
 .company-places__makers i {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 428, ../sass/tabs.scss */
+/* line 435, ../sass/tabs.scss */
 .company-places__marker-1 i {
   background: url('../img/icons-se5b92bf92d.png') 0 -2046px no-repeat;
   width: 12px;
   height: 21px;
 }
 
-/* line 433, ../sass/tabs.scss */
+/* line 440, ../sass/tabs.scss */
 .company-places__marker-2 i {
   background: url('../img/icons-se5b92bf92d.png') 0 -2077px no-repeat;
   width: 12px;
   height: 21px;
 }
 
-/* line 438, ../sass/tabs.scss */
+/* line 445, ../sass/tabs.scss */
 .company-places__marker-3 i {
   background: url('../img/icons-se5b92bf92d.png') 0 -2015px no-repeat;
   width: 12px;
