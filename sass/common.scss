@@ -785,3 +785,85 @@ table {
 		@include sized-sprite($icons, arr6);
 	}
 }
+/*video-popup*/
+.bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+.video-popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 590px;
+	height: 345px;
+	margin: -170px 0 0 -295px;
+	border: 5px solid #fff;
+	@include box-shadow(rgba(0,0,0,0.7) 0px 0px 10px);
+	background: #fff;
+	z-index: 150;
+	iframe {
+		width: 590px;
+		height: 345px;
+	}
+}
+.video-popup__close {
+	position: absolute;
+	top: -23px;
+	right: -5px;
+	width: 28px;
+	height: 18px;
+	background: #fff;
+	@include border-radius(3px 3px 0 0);
+	cursor: pointer;
+	i {
+		position: absolute;
+		top: 8px;
+		left: 9px;
+		@include sized-sprite($icons, close1);
+	}
+}
+/*static*/
+.static {
+	padding-bottom: 50px;
+	overflow: hidden;
+	img, p {
+		margin-bottom: 20px;
+	}
+	h1 {
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+	h4 {
+		margin-bottom: 10px;
+		font-weight: normal;
+		font-size: 18px;
+		color: $blue;
+	}
+	ul {
+		margin: 10px 0 20px 0;
+	}
+	li {
+		position: relative;
+		padding-left: 12px;
+		line-height: 1.5;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 0;
+			@include sized-sprite($icons, arr4);
+		}
+	}
+	i {
+		font-size: 12px;
+	}
+}

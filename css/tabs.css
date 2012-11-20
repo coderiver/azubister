@@ -129,12 +129,6 @@
 }
 
 /* line 72, ../sass/tabs.scss */
-strong {
-  margin: 15px 0;
-  font-size: 28px;
-}
-
-/* line 76, ../sass/tabs.scss */
 .contacts__personal {
   position: absolute;
   right: 20px;
@@ -144,110 +138,110 @@ strong {
 }
 
 /*about*/
-/* line 85, ../sass/tabs.scss */
+/* line 81, ../sass/tabs.scss */
 .about p {
   margin-bottom: 20px;
 }
-/* line 88, ../sass/tabs.scss */
+/* line 84, ../sass/tabs.scss */
 .about .col-4 {
   width: 51%;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 88, ../sass/tabs.scss */
+  /* line 84, ../sass/tabs.scss */
   .about .col-4 {
     width: 54%;
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 88, ../sass/tabs.scss */
+  /* line 84, ../sass/tabs.scss */
   .about .col-4 {
     width: 99%;
   }
 }
 
-/* line 98, ../sass/tabs.scss */
+/* line 94, ../sass/tabs.scss */
 .about__team {
   overflow: hidden;
 }
-/* line 100, ../sass/tabs.scss */
+/* line 96, ../sass/tabs.scss */
 .about__team li {
   float: left;
   width: 150px;
   margin: 0 20px 35px 0;
 }
-/* line 105, ../sass/tabs.scss */
+/* line 101, ../sass/tabs.scss */
 .about__team img {
   margin-bottom: 15px;
 }
-/* line 108, ../sass/tabs.scss */
+/* line 104, ../sass/tabs.scss */
 .about__team a {
   font-weight: bold;
 }
-/* line 111, ../sass/tabs.scss */
+/* line 107, ../sass/tabs.scss */
 .about__team span {
   display: block;
   padding: 5px 0;
 }
 
-/* line 116, ../sass/tabs.scss */
+/* line 112, ../sass/tabs.scss */
 .about__social {
   overflow: hidden;
 }
-/* line 118, ../sass/tabs.scss */
+/* line 114, ../sass/tabs.scss */
 .about__social a {
   float: left;
   margin-right: 7px;
 }
 
-/* line 123, ../sass/tabs.scss */
+/* line 119, ../sass/tabs.scss */
 .about__social-fb {
-  background: url('../img/icons-se5b92bf92d.png') 0 -1901px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -1954px no-repeat;
   width: 21px;
   height: 21px;
 }
 
-/* line 124, ../sass/tabs.scss */
+/* line 120, ../sass/tabs.scss */
 .about__social-an {
-  background: url('../img/icons-se5b92bf92d.png') 0 -1809px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -1862px no-repeat;
   width: 21px;
   height: 21px;
 }
 
 /*imprint*/
-/* line 126, ../sass/tabs.scss */
+/* line 122, ../sass/tabs.scss */
 .imprint {
   width: 660px;
   padding-top: 20px;
 }
-/* line 129, ../sass/tabs.scss */
+/* line 125, ../sass/tabs.scss */
 .imprint p {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 126, ../sass/tabs.scss */
+  /* line 122, ../sass/tabs.scss */
   .imprint {
     width: 100%;
   }
 }
 
 /*partners*/
-/* line 137, ../sass/tabs.scss */
+/* line 133, ../sass/tabs.scss */
 .partners {
   margin: 35px -30px 0 0;
   overflow: hidden;
 }
-/* line 140, ../sass/tabs.scss */
+/* line 136, ../sass/tabs.scss */
 .partners li {
   float: left;
   width: 150px;
   margin-right: 20px;
 }
-/* line 145, ../sass/tabs.scss */
+/* line 141, ../sass/tabs.scss */
 .partners img {
   display: block;
   border: 1px solid #c2c2c2;
 }
-/* line 149, ../sass/tabs.scss */
+/* line 145, ../sass/tabs.scss */
 .partners span {
   display: block;
   margin: 10px 0 15px 0;
@@ -255,47 +249,47 @@ strong {
 }
 
 /*study-offers*/
-/* line 157, ../sass/tabs.scss */
+/* line 153, ../sass/tabs.scss */
 .study-offers ul, .apprenticeships ul {
   margin: 30px 0 20px 0;
 }
-/* line 160, ../sass/tabs.scss */
+/* line 156, ../sass/tabs.scss */
 .study-offers li, .apprenticeships li {
   padding: 9px 0 9px 10px;
   border-top: 1px dotted #cfcfcf;
   overflow: hidden;
 }
-/* line 164, ../sass/tabs.scss */
+/* line 160, ../sass/tabs.scss */
 .study-offers li:first-child, .apprenticeships li:first-child {
   border: none;
 }
-/* line 168, ../sass/tabs.scss */
+/* line 164, ../sass/tabs.scss */
 .study-offers img, .apprenticeships img {
   float: left;
   margin-right: 10px;
   border: 1px solid #cfcfcf;
 }
-/* line 173, ../sass/tabs.scss */
+/* line 169, ../sass/tabs.scss */
 .study-offers .h4, .apprenticeships .h4 {
   margin-bottom: 5px;
 }
-/* line 176, ../sass/tabs.scss */
+/* line 172, ../sass/tabs.scss */
 .study-offers span, .apprenticeships span {
   font-size: 12px;
 }
-/* line 178, ../sass/tabs.scss */
+/* line 174, ../sass/tabs.scss */
 .study-offers span a, .apprenticeships span a {
   border-bottom: 1px dotted #666666;
   color: #666;
 }
 
 /*apprenticeships*/
-/* line 186, ../sass/tabs.scss */
+/* line 182, ../sass/tabs.scss */
 .apprenticeships .top {
   position: relative;
   background: #f2fafe;
 }
-/* line 189, ../sass/tabs.scss */
+/* line 185, ../sass/tabs.scss */
 .apprenticeships .top i {
   position: absolute;
   top: 10px;
@@ -306,47 +300,47 @@ strong {
 }
 
 /*company-any-info*/
-/* line 200, ../sass/tabs.scss */
+/* line 196, ../sass/tabs.scss */
 .company-any-info {
   width: 66%;
 }
-/* line 202, ../sass/tabs.scss */
+/* line 198, ../sass/tabs.scss */
 .company-any-info ul {
   margin: 10px 0 20px 0;
 }
-/* line 205, ../sass/tabs.scss */
+/* line 201, ../sass/tabs.scss */
 .company-any-info li {
   padding-top: 19px;
   margin-top: 19px;
   border-top: 1px dotted #cfcfcf;
   overflow: hidden;
 }
-/* line 210, ../sass/tabs.scss */
+/* line 206, ../sass/tabs.scss */
 .company-any-info li:first-child {
   margin-top: 0px;
   border: none;
 }
-/* line 215, ../sass/tabs.scss */
+/* line 211, ../sass/tabs.scss */
 .company-any-info .h4 {
   margin-bottom: 10px;
   font-weight: normal;
 }
-/* line 218, ../sass/tabs.scss */
+/* line 214, ../sass/tabs.scss */
 .company-any-info .h4 a {
   color: #666666;
 }
 
-/* line 223, ../sass/tabs.scss */
+/* line 219, ../sass/tabs.scss */
 .company-any-info__pic {
   position: relative;
   float: left;
   margin-right: 20px;
 }
-/* line 227, ../sass/tabs.scss */
+/* line 223, ../sass/tabs.scss */
 .company-any-info__pic img, .company-any-info__pic span {
   display: block;
 }
-/* line 230, ../sass/tabs.scss */
+/* line 226, ../sass/tabs.scss */
 .company-any-info__pic span {
   position: absolute;
   bottom: 0;
@@ -362,56 +356,56 @@ strong {
 }
 
 /*company-places*/
-/* line 245, ../sass/tabs.scss */
+/* line 241, ../sass/tabs.scss */
 .company-places {
   margin-top: 20px;
 }
 
 /*company-places__list*/
-/* line 249, ../sass/tabs.scss */
+/* line 245, ../sass/tabs.scss */
 .company-places__list {
   margin-bottom: 30px;
 }
-/* line 251, ../sass/tabs.scss */
+/* line 247, ../sass/tabs.scss */
 .company-places__list .h5 {
   height: 27px;
   line-height: 27px;
   color: #666666;
 }
-/* line 256, ../sass/tabs.scss */
+/* line 252, ../sass/tabs.scss */
 .company-places__list li {
   border-bottom: 1px dotted #cfcfcf;
 }
-/* line 259, ../sass/tabs.scss */
+/* line 255, ../sass/tabs.scss */
 .company-places__list .active {
   background: #e8f7fe;
 }
-/* line 261, ../sass/tabs.scss */
+/* line 257, ../sass/tabs.scss */
 .company-places__list .active .company-places__prof {
   color: #22b5f4;
 }
-/* line 265, ../sass/tabs.scss */
+/* line 261, ../sass/tabs.scss */
 .company-places__list td {
   padding: 2px 0;
   vertical-align: top;
 }
-/* line 269, ../sass/tabs.scss */
+/* line 265, ../sass/tabs.scss */
 .company-places__list a {
   position: relative;
   text-decoration: underline;
   color: #666666;
 }
-/* line 273, ../sass/tabs.scss */
+/* line 269, ../sass/tabs.scss */
 .company-places__list a i {
   position: absolute;
   top: 2px;
   right: -17px;
-  background: url('../img/icons-se5b92bf92d.png') 0 -2343px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -2396px no-repeat;
   width: 11px;
   height: 11px;
 }
 
-/* line 281, ../sass/tabs.scss */
+/* line 277, ../sass/tabs.scss */
 .company-places__prof {
   display: block;
   padding: 3px 0 3px 6px;
@@ -420,7 +414,7 @@ strong {
   cursor: pointer;
 }
 
-/* line 288, ../sass/tabs.scss */
+/* line 284, ../sass/tabs.scss */
 .company-places__details {
   display: none;
   width: 280px;
@@ -428,37 +422,37 @@ strong {
   font-size: 12px;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 288, ../sass/tabs.scss */
+  /* line 284, ../sass/tabs.scss */
   .company-places__details {
     width: auto;
   }
 }
 
-/* line 297, ../sass/tabs.scss */
+/* line 293, ../sass/tabs.scss */
 .company-places__detail {
   width: 70px;
   font-weight: bold;
 }
 
 /*company-places__filter*/
-/* line 302, ../sass/tabs.scss */
+/* line 298, ../sass/tabs.scss */
 .company-places__filter {
   position: relative;
   z-index: 5;
 }
-/* line 306, ../sass/tabs.scss */
+/* line 302, ../sass/tabs.scss */
 .company-places__filter form {
   position: relative;
   padding: 10px 150px 10px 10px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 306, ../sass/tabs.scss */
+  /* line 302, ../sass/tabs.scss */
   .company-places__filter form {
     padding: 10px;
   }
 }
 
-/* line 314, ../sass/tabs.scss */
+/* line 310, ../sass/tabs.scss */
 .company-places__filter-open {
   position: absolute;
   top: 0;
@@ -467,17 +461,17 @@ strong {
   font-size: 12px;
   cursor: pointer;
 }
-/* line 321, ../sass/tabs.scss */
+/* line 317, ../sass/tabs.scss */
 .company-places__filter-open i {
   position: absolute;
   top: 1px;
   right: 0;
-  background: url('../img/icons-se5b92bf92d.png') 0 -2479px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -2552px no-repeat;
   width: 11px;
   height: 11px;
 }
 @media only screen and (max-width: 680px) {
-  /* line 314, ../sass/tabs.scss */
+  /* line 310, ../sass/tabs.scss */
   .company-places__filter-open {
     top: 36px;
     left: 0;
@@ -485,25 +479,25 @@ strong {
   }
 }
 
-/* line 334, ../sass/tabs.scss */
+/* line 330, ../sass/tabs.scss */
 .company-places__filter-closed i {
-  background: url('../img/icons-se5b92bf92d.png') 0 -2500px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -2573px no-repeat;
   width: 11px;
   height: 11px;
 }
 
-/* line 338, ../sass/tabs.scss */
+/* line 334, ../sass/tabs.scss */
 .company-places__zoom {
   position: relative;
   height: 26px;
 }
-/* line 341, ../sass/tabs.scss */
+/* line 337, ../sass/tabs.scss */
 .company-places__zoom input, .company-places__zoom button {
   position: absolute;
   top: 0;
   height: 26px;
 }
-/* line 346, ../sass/tabs.scss */
+/* line 342, ../sass/tabs.scss */
 .company-places__zoom input {
   left: 0;
   width: 68%;
@@ -517,7 +511,7 @@ strong {
   -o-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 353, ../sass/tabs.scss */
+/* line 349, ../sass/tabs.scss */
 .company-places__zoom button {
   right: 0;
   width: 30%;
@@ -539,13 +533,13 @@ strong {
   color: #fff;
 }
 @media only screen and (max-width: 680px) {
-  /* line 338, ../sass/tabs.scss */
+  /* line 334, ../sass/tabs.scss */
   .company-places__zoom {
     padding-bottom: 25px;
   }
 }
 
-/* line 367, ../sass/tabs.scss */
+/* line 363, ../sass/tabs.scss */
 .commpany-places__filter-list {
   display: none;
   position: relative;
@@ -554,17 +548,17 @@ strong {
   font-size: 12px;
   zoom: 1;
 }
-/* line 373, ../sass/tabs.scss */
+/* line 369, ../sass/tabs.scss */
 .commpany-places__filter-list b {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 378, ../sass/tabs.scss */
+/* line 374, ../sass/tabs.scss */
 .commpany-places__filter-list ul {
   overflow: hidden;
 }
-/* line 381, ../sass/tabs.scss */
+/* line 377, ../sass/tabs.scss */
 .commpany-places__filter-list li {
   position: relative;
   float: left;
@@ -572,18 +566,18 @@ strong {
   padding-left: 20px;
   margin-bottom: 10px;
 }
-/* line 388, ../sass/tabs.scss */
+/* line 384, ../sass/tabs.scss */
 .commpany-places__filter-list input {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 395, ../sass/tabs.scss */
+/* line 391, ../sass/tabs.scss */
 .company-places__map {
   position: relative;
 }
-/* line 397, ../sass/tabs.scss */
+/* line 393, ../sass/tabs.scss */
 .company-places__map span {
   position: absolute;
   top: 0;
@@ -596,19 +590,19 @@ strong {
   font-size: 12px;
   color: #fff;
 }
-/* line 409, ../sass/tabs.scss */
+/* line 405, ../sass/tabs.scss */
 .company-places__map img {
   display: block;
   width: 100%;
 }
 
-/* line 414, ../sass/tabs.scss */
+/* line 410, ../sass/tabs.scss */
 .company-places__makers {
   padding: 5px 10px 10px 10px;
   margin-bottom: 5px;
   overflow: hidden;
 }
-/* line 419, ../sass/tabs.scss */
+/* line 415, ../sass/tabs.scss */
 .company-places__makers li {
   position: relative;
   float: left;
@@ -618,30 +612,30 @@ strong {
   padding: 0 30px 0 20px;
   font-size: 10px;
 }
-/* line 428, ../sass/tabs.scss */
+/* line 424, ../sass/tabs.scss */
 .company-places__makers i {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 435, ../sass/tabs.scss */
+/* line 431, ../sass/tabs.scss */
 .company-places__marker-1 i {
-  background: url('../img/icons-se5b92bf92d.png') 0 -2046px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -2099px no-repeat;
   width: 12px;
   height: 21px;
 }
 
-/* line 440, ../sass/tabs.scss */
+/* line 436, ../sass/tabs.scss */
 .company-places__marker-2 i {
-  background: url('../img/icons-se5b92bf92d.png') 0 -2077px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -2130px no-repeat;
   width: 12px;
   height: 21px;
 }
 
-/* line 445, ../sass/tabs.scss */
+/* line 441, ../sass/tabs.scss */
 .company-places__marker-3 i {
-  background: url('../img/icons-se5b92bf92d.png') 0 -2015px no-repeat;
+  background: url('../img/icons-s86e72b65f0.png') 0 -2068px no-repeat;
   width: 12px;
   height: 21px;
 }

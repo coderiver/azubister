@@ -17,8 +17,8 @@
 	<div class="header">
 		<h1 class="logo"><a href="#">Azubister - Dein Ausbildungsportal</a></h1>
 		<ul class="nav">
-			<li><a href="#">Ausbildung</a></li>
-			<li class="active"><a href="#">Ausbildungsplätze</a></li>
+			<li class="active"><a href="#">Ausbildung</a></li>
+			<li><a href="#">Ausbildungsplätze</a></li>
 			<li><a href="#">Betriebe</a></li>
 			<li><a href="#">Magazin</a></li>
 			<li class="nav__search"><a href="#">Suche<i></i></a></li>
@@ -41,7 +41,7 @@
 		<!-- BEGIN .breadcrumps -->
 		<ul class="breadcrumps">
 			<li><a href="#">Home</a><i></i></li>	
-			<li><span>Ausbildungsplätze</span></li>			
+			<li><span>Ausbildung</span></li>			
 		</ul>
 		<!-- END .breadcrumps -->
 		<div class="col-1">
@@ -53,8 +53,8 @@
 						<button type="submit">Suchen<i></i></button>
 					</div>					
 				</div>
-				<div class="ext-search__lists ext-search__lists_s">
-					<ul>
+				<div class="ext-search__lists">
+					<ul class="ext-search__list-3">
 						<li><b>Berufe</b></li>
 						<li><a href="#">Fachinformatiker - Systemintegration</a></li>
 						<li><a href="#">Bachelor of Science</a></li>
@@ -63,20 +63,11 @@
 						<li><a href="#">Mediengestalter Digital und Print</a></li>
 						<li><a href="#">Kaufmann für Marketingkommunikation</a></li>
 						<li><a href="#">Kaufmann für audiovisuelle Medien</a></li>
+						<li><a href="#">Assistent - Informatik</a></li>
+						<li><a href="#">Kamera-Assistent</a></li>
 					</ul>
-					<ul>
-						<li><b>Betriebe</b></li>
-						<li><a href="#">NRW.Bank vodafone Germany</a></li>
-						<li><a href="#">Hagebau</a></li>
-						<li><a href="#">Bundeswehr</a></li>
-						<li><a href="#">Kentucky Fried Chicken</a></li>
-						<li class="ext-search__list-2"><b>Schulabschluss</b></li>
-						<li><a href="#">Hauptschule</a></li>
-						<li><a href="#">Realschule</a></li>
-						<li><a href="#">Abitur</a></li>
-					</ul>
-					<ul>
-						<li><b>Branchen</b></li>
+					<ul class="ext-search__list-3">
+						<li><b>Branche</b></li>
 						<li><a href="#">Bauen und Gestalten</a></li>
 						<li><a href="#">Büro und Organisation</a></li>
 						<li><a href="#">Essen und Genießen</a></li>
@@ -85,9 +76,11 @@
 						<li><a href="#">Medizin, Pflege und Schönheit</a></li>
 						<li><a href="#">Reise, Musik und Veranstaltung</a></li>
 						<li><a href="#">Soziales, Betreuung und Kinder</a></li>
+						<li><a href="#">Umwelt, Landwirtschaft und See</a></li>
+						<li><a href="#">Verkehr, Schrauben und Motoren</a></li>
 					</ul>
-					<ul>
-						<li><b>Städte</b></li>
+					<ul class="ext-search__list-4">
+						<li><b>Stadt</b></li>
 						<li><a href="#">Köln</a></li>
 						<li><a href="#">München</a></li>
 						<li><a href="#">Berlin</a></li>
@@ -102,91 +95,57 @@
 				</div>
 			</form>
 			<!-- END .ext-search -->
-			<!-- BEGIN .tabs -->
-			<div class="tabs">
-				<ul class="tabs__nav">
-					<li><a class="active" href="apprenticeships">Ausbildungsplätze</a></li>
-					<li><a href="study-offers">Studienangebote</a></li>
+			<!-- BEGIN .job-training -->			
+			<div class="job-training">
+				<h3 class="h3">Ausbildungsbetriebe stellen sich vor</h3>
+				<ul>
+					<li>
+						<a href="#"><img src="img/top.jpg" alt=""></a>
+						<a class="job-training__title" href="#">Laufbahn der Feldwebel</a>
+						<p>Feldwebel sind Soldaten, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <a href="#">mehr ...</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/top.jpg" alt=""></a>
+						<a class="job-training__title" href="#">Laufbahn der Feldwebel</a>
+						<p>Feldwebel sind Soldaten, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <a href="#">mehr ...</a></p>
+					</li>
+					<li>
+						<a href="#"><img src="img/top.jpg" alt=""></a>
+						<a class="job-training__title" href="#">Laufbahn der Feldwebel</a>
+						<p>Feldwebel sind Soldaten, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <a href="#">mehr ...</a></p>
+					</li>
 				</ul>
-				<div class="tabs__content tabs__content_no-mb">
-					<!-- BEGIN .apprenticeships -->
-					<div class="tabs__item apprenticeships" style="display: block">
-	        	<ul>
-	        		<li class="top">
-	        			<i>Top-Ausbildungsplatz</i>
-	        			<a href="#"><img src="img/zz.jpg" alt=""></a>
-	        			<h4 class="h4"><a href="#">Bundeswehr Karriere</a></h4>
-	        			<span><a href="#">duale Ausbildung</a> - 48 Monate - mind. Abitur</span>
-	        		</li>
-	        		<li>
-	        			<a href="#"><img src="img/zz.jpg" alt=""></a>
-	        			<h4 class="h4"><a href="#">Bundeswehr Karriere</a></h4>
-	        			<span>Ausbildungsplatz - Bundeswehr</span>
-	        		</li>
-	        		<li>
-	        			<a href="#"><img src="img/zz.jpg" alt=""></a>
-	        			<h4 class="h4"><a href="#">Bundeswehr Karriere</a></h4>
-	        			<span>Ausbildungsplatz - Bundeswehr</span>
-	        		</li>
-	        	</ul>
-	        	<div class="view-all">
-							<i></i>
-							<a href="#">Mehr anzeigen</a>
-						</div>
-	        </div>
-        	<!-- END .apprenticeships -->
-					<!-- BEGIN .study-offers -->
-					<div class="tabs__item study-offers">
-	        	<ul>
-	        		<li>
-	        			<a href="#"><img src="img/zz.jpg" alt=""></a>
-	        			<h4 class="h4"><a href="#">Bundeswehr Karriere</a></h4>
-	        			<span>Ausbildungsplatz - Bundeswehr</span>
-	        		</li>
-	        		<li>
-	        			<a href="#"><img src="img/zz.jpg" alt=""></a>
-	        			<h4 class="h4"><a href="#">Bundeswehr Karriere</a></h4>
-	        			<span>Ausbildungsplatz - Bundeswehr</span>
-	        		</li>
-	        		<li>
-	        			<a href="#"><img src="img/zz.jpg" alt=""></a>
-	        			<h4 class="h4"><a href="#">Bundeswehr Karriere</a></h4>
-	        			<span>Ausbildungsplatz - Bundeswehr</span>
-	        		</li>
-	        	</ul>
-	        	<div class="view-all">
-							<i></i>
-							<a href="#">Mehr anzeigen</a>
-						</div>
-	        </div>
-        	<!-- END .study-offers -->
+				<div class="view-all">
+					<i></i>
+					<a href="#">Mehr anzeigen</a>
 				</div>
-				<!-- BEGIN .job-tips -->
-				<div class="job-tips">
-					<h3 class="h3">Tipps für deine Ausbildungsplatzsuche</h3>
+				<div class="job-training__txt">
+					<h3 class="h3">Ich bin ein Text für die Suchmaschine</h3>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
 				</div>
-				<!-- END .job-tips -->
 			</div>
-			<!-- END .tabs -->
+			<!-- END .job-training -->
 		</div>
-		<div class="col-2">
-			<!-- BEGIN .top-employer -->
-			<div class="top-employer">
-				<div class="aside-title">Top-Arbeitgeber</div>
+		<div class="col-2">			
+			<div class="top-employer top-employer__solid">
+				<div class="aside-title">Top-Betriebe</div>
 				<ul>
 					<li><img src="img/top.jpg" alt=""></li>
 					<li><img src="img/top.jpg" alt=""></li>
 					<li><img src="img/top.jpg" alt=""></li>
 					<li><img src="img/top.jpg" alt=""></li>
 				</ul>
+			</div>			
+			<!-- BEGIN .our-video -->
+			<div class="our-video">
+				<div class="aside-title">Videos unserer Betriebe</div>
+				<a href="<iframe width='560' height='315' src='http://www.youtube.com/embed/gnKLnlnSiWM' frameborder='0' allowfullscreen></iframe>"><img src="img/pic8.jpg" alt=""></a>
 			</div>
-			<!-- END .top-employer -->
+			<!-- END .our-video -->
 			<div class="advert advert_aside">
 				<span>Anzeige</span>
 				<img src="img/advert.jpg" alt="">
 			</div>
-			<!-- BEGIN .nav-more -->		
 		</div>
 		<div class="clr"></div>
 	</div>
@@ -284,5 +243,12 @@
 	</div>
 </div>
 <!-- END .footer -->	
+<!-- BEGIN .video-popup -->
+<div class="bg"></div>
+<div class="video-popup">
+	<div class="video-popup__close"><i></i></div>
+	<div class="video-popup__iframe"></div>
+</div>
+<!-- END .video-popup -->
 </body>
 </html>

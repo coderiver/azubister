@@ -1,4 +1,4 @@
-.lteie8{
+.lteie8, .ie8 {
 	body {
 		min-width: 1000px;
 	}
@@ -29,6 +29,15 @@
 	.txt-field {
 		input {
 			line-height: 30px;
+		}
+	}
+}
+.ie8 {
+	.search {
+		button {
+			i {
+				top: -7px;
+			}
 		}
 	}
 }
