@@ -56,6 +56,7 @@ table {
 }
 .h4 {
 	font-size: 18px;
+	font-weight: normal;
 }
 .h5 {
 	font-size: 16px;
@@ -262,12 +263,9 @@ table {
 		height: 50px;
 		padding-right: 3%;	
 		vertical-align: middle;
-		@include respond-to(step1) {
-			width: 33%;
-			padding-right: 0px;
-		}
 		@include respond-to(step2) {
 			width: 50%;
+			padding-right: 0px;
 		}
 	}
 	a {
@@ -318,6 +316,25 @@ table {
 		@extend %nav-more;
 		i {@include sized-sprite($icons, nm17);}
 	}
+	.active {
+		i {
+			filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+	    filter: gray; /* IE6-9 */
+	    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+		}
+	}
+}
+.nav-more__no-full {
+	ul {
+		margin-bottom: 15px;
+	}
+	li {
+		a {
+			font-size: 12px;
+			color: #666666;
+			font-weight: bold;
+		}
+	}	
 }
 .aside-title {
 	height: 24px;
@@ -865,5 +882,121 @@ table {
 	}
 	i {
 		font-size: 12px;
+	}
+}
+/*lists*/
+.list {
+	li {		
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.5;
+	}
+	a {
+		position: relative;
+		display: block;
+		padding-left: 15px;
+		font-size: 14px;
+		font-weight: normal;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 0;
+			@include sized-sprite($icons, arr4);			
+		}		
+	}
+}
+.list_red {
+	a {
+		&:before {
+			@include sized-sprite($icons, arr7);
+		}		
+	}
+}
+.list_blue {
+	a {
+		&:before {
+			@include sized-sprite($icons, arr8);
+		}		
+	}
+}
+/*block-txt*/
+.block-txt {
+	padding-bottom: 20px;
+	border-top: 1px dotted #cfcfcf;
+	.h3 {
+		padding: 20px 0;
+	}
+}
+/*articles*/
+.articles {
+		ul {
+		padding-bottom: 19px;
+	}
+	li {
+		padding: 19px 0;
+		padding-right: 10px;
+		border-top: 1px dotted #cfcfcf;
+		overflow: hidden;
+		&:first-child {
+			margin-top: 0;
+			border: none;
+		}
+	}	
+	img {
+		float: left;
+		margin-right: 20px;
+		border: 1px solid #c2c2c2;
+		@include respond-to(step4) {
+			display: none;
+		}
+	}
+	p {
+		margin-top: 5px;
+	}
+	.h4 {
+		a {
+			color: #666666;
+		}		
+	}
+}
+.articles__pic {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	img, span {
+		display: block;
+	}
+	img {
+		margin-right: 0px;
+		border: none;
+	}
+	span {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding-right: 10px;
+		text-align: right;
+		height: 17px;
+		line-height: 17px;
+		background: rgba(102,102,102,0.7);
+		font-size: 9px;
+		color: #fff;
+	}	
+	@include respond-to(step4) {
+		display: none;
+	}
+}
+.articles__top {
+	position: relative;
+	background: #e8f7fe;
+	i {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-style: normal;
+		color: #c2c2c2;
+		font-size: 10px;
 	}
 }

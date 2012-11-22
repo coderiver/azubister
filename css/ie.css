@@ -28,7 +28,12 @@
   line-height: 30px;
 }
 
-/* line 38, ../sass/ie.scss */
+/* line 37, ../sass/ie.scss */
+.lteie8 .aside-info ul {
+  margin-bottom: 20px;
+}
+
+/* line 45, ../sass/ie.scss */
 .ie8 .search button i {
   top: -7px;
 }

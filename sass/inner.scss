@@ -257,8 +257,7 @@
 	}	
 }
 .top10__lists {
-	padding-bottom: 30px;
-	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 30px;	
 	overflow: hidden;
 	ul {
 		float: left;
@@ -465,6 +464,9 @@
 		@include respond-to(step1) {
 			margin: 0;
 		}
+		@include respond-to(step4) {
+			text-align: center;
+		}
 	}
 	li {
 		position: relative;
@@ -472,21 +474,18 @@
 		width: 150px;
 		margin-right: 20px;
 		cursor: pointer;
-		@include respond-to(step1) {
-			float: none;
-			display: inline-block;
-			margin: 0 20px 20px 0; 
-		}
-		@include respond-to(step4) {
-			margin: 0 5px 5px 0; 
-		}
-		@include respond-to(step5) {
-			margin: 0 5px 5px 5px;
-		}
 		i {
 			position: absolute;
 			left: 10px;
 			bottom: 10px;
+		}
+		@include respond-to(step1) {
+			margin: 0 20px 20px 0;
+		}
+		@include respond-to(step4) {
+			float: none;
+			display: inline-block;
+			margin: 0 10px 20px 10px;
 		}
 	}	
 	.job-gallery__def {
@@ -524,25 +523,25 @@
 	}
 }
 /*job-training*/
-.job-training {
+.job-trainings {
 	margin-bottom: 20px;
 	padding: 0 1px 2px 1px;
 	overflow: hidden;
 }
-.job-training__left, .job-training__right {
+.job-trainings__left, .job-trainings__right {
 	width: 49%;
 	margin-bottom: 20px;
 	@include respond-to(step3) {
 		width: 100%;
 	}
 }
-.job-training__left {
+.job-trainings__left {
 	float: left;
 }
-.job-training__right {
+.job-trainings__right {
 	float: right;
 }
-.job-training__blue, .job-training__red {
+.job-trainings__blue, .job-trainings__red {
 	position: relative;
 	min-height: 90px;
 	padding: 20px 20px 20px 65px;
@@ -571,7 +570,7 @@
 		min-height: auto;
 	}
 }
-.job-training__blue {
+.job-trainings__blue {
 	em {
 		@include sized-sprite($icons, yes);
 	}
@@ -579,20 +578,12 @@
 		color: #22b5f4;
 	}
 }
-.job-training__red {
+.job-trainings__red {
 	em {
 		@include sized-sprite($icons, no);
 	}
 	.h4 {
 		color: #e2007a;
-	}
-}
-/*job-tips*/
-.job-tips {
-	border-top: 1px dotted #cfcfcf;
-	margin-bottom: 80px;
-	.h3 {
-		margin: 20px 0;
 	}
 }
 /*top-employer*/
@@ -630,6 +621,24 @@
 .top-employer__solid {
 	li {
 		border: 1px solid #cfcfcf;
+	}
+}
+.top-employer__city {
+	ul {
+		margin-bottom: 15px;
+	}
+	li {
+		border: none;
+	}
+	img {
+		display: block;
+		border: 1px solid #cfcfcf;
+	}
+	span {
+		margin-left: 4px;
+		font-size: 12px;
+		color: #666666;
+		font-weight: bold;
 	}
 }
 /*do*/
@@ -910,43 +919,10 @@
 	}
 }
 /*job-training*/
-.job-training {
+.job-training_article {
+	padding-top: 16px;
 	ul {
 		padding-bottom: 19px;
-	}
-	li {
-		margin-top: 19px;
-		padding-top: 19px;
-		border-top: 1px dotted #cfcfcf;
-		overflow: hidden;
-		&:first-child {
-			margin-top: 0;
-			border: none;
-		}
-	}
-	img {
-		float: left;
-		margin-right: 20px;
-		border: 1px solid #c2c2c2;
-		@include respond-to(step4) {
-			float: none;
-			display: block;
-			margin-bottom: 20px;
-		}
-	}
-	p {
-		margin-top: 5px;
-	}
-}
-.job-training__title {
-	font-size: 18px;
-	color: #666666;
-}
-.job-training__txt {
-	margin-bottom: 30px;
-	border-top: 1px dotted #cfcfcf;
-	.h3 {
-		padding: 20px 0;
 	}
 }
 /*our-video*/
@@ -955,5 +931,220 @@
 	img {
 		display: block;
 		border: 1px solid #c2c2c2;
+	}
+}
+/*page404*/
+.page404 {
+	margin-bottom: 50px;
+	@include respond-to(step1) {
+		margin-bottom: 20px;
+	}
+}
+.page404__title {
+	margin-bottom: -15px;
+	font-size: 72px;
+	color: #cfcfcf;
+	font-weight: bold;
+}
+.page404__cities {
+	margin-top: 35px;
+	overflow: hidden;
+	ul {
+		float: left;
+		width: 25%;
+		@include respond-to(step3) {
+			width: 50%;
+			margin-bottom: 20px;
+		}
+	}
+}
+.page404-map {
+	margin-bottom: 20px;	
+}
+/*shop-city*/
+.shop-city, .shop-group {
+	.h2 {
+		margin-bottom: 20px;
+		color: $blue;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.shop-city-map, .shop-group-pic {
+	margin-bottom: 20px;
+	@include respond-to(step3) {
+		img {
+			width: 100%;
+		}
+	}	
+}
+/*logos*/
+.logos {
+	width: 660px;
+	margin-top: 35px;
+	ul {
+		margin-right: -30px;
+		overflow: hidden;
+	}
+	li {
+		float: left;
+		margin: 0 20px 10px 0;
+		border: 1px solid #c2c2c2;
+	}
+	img {
+		display: block;
+	}
+}
+/*city-logos*/
+.city-logos {
+	overflow: hidden;
+	ul {
+		margin: 0 -30px 15px 0;	
+		overflow: hidden;	
+		@include respond-to(step3) {
+			margin-right: 0;
+		}
+	}
+	li {
+		float: left;
+		width: 150px;
+		margin-right: 20px;
+		@include respond-to(step3) {
+			margin-right: 0;
+		}
+	}
+	img {
+		float: left;
+		margin-right: 15px;
+	}
+	span {
+		display: inline-block;
+		height: 55px;
+		line-height: 55px;
+		font-size: 12px;
+		font-weight: bold;
+		color: #666666;
+	}
+}
+/*training*/
+.training__list {
+	padding: 35px 0;
+	overflow: hidden;
+	@include respond-to(step3) {
+		padding-bottom: 0px;
+	}
+	ul {
+		float: left;
+		width: 30%;
+		margin-right: 3%;
+		@include respond-to(step3) {
+			width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+	li {		
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.5;
+	}
+	a {
+		position: relative;
+		display: block;
+		padding-left: 15px;
+		font-size: 14px;
+		font-weight: normal;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 0;
+			@include sized-sprite($icons, arr7);
+		}		
+	}
+}
+/*shop*/
+.shop {
+	margin-bottom: 20px;
+	.h4 {
+		margin-bottom: 10px;
+		font-weight: normal;
+	}
+	p {
+		margin-bottom: 25px;
+	}
+	ul {
+		margin-top: 10px;
+	}
+}
+.shop-theme {
+	// height: 18px;
+	margin-bottom: 10px;
+	line-height: 18px;
+	font-size: 12px;
+	span {
+		margin-right: 2px;
+		padding: 0 3px;
+		background: $blue;
+		color: #fff;
+	}
+}
+.shop-pic {
+	margin-bottom: 20px;
+	img {
+		width: 100%;
+	}
+}
+.shop-article {
+	li {
+		padding: 19px 0;
+		border-top: 1px dotted #cfcfcf;
+		overflow: hidden;
+	}
+	img {
+		float: left;
+		margin-right: 20px;
+		@include respond-to(step2) {
+			display: none;
+		}
+	}
+	.h4 {
+		margin-bottom: 5px;
+		font-weight: normal;
+		a {
+			color: #666666;
+		}
+	}
+}
+.shop-article__industry {
+	.shop-theme {
+		span {
+			background: #22b5f4;
+		}
+	}
+}
+/*banner-wrap*/
+.banner-wrap {
+	position: relative;
+	@include respond-to(step1) {
+		padding-right: 170px;
+	}
+	@include respond-to(step2) {
+		padding: 0;
+	}
+	.banner {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		height: 600px;
+		background: #f07fbc;
+		@include respond-to(step1) {
+			display: block;
+		}
+		@include respond-to(step2) {
+			display: none;
+		}
 	}
 }

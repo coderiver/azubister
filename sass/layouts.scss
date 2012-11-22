@@ -10,6 +10,21 @@
 .col-1_1 {
 	float: right;
 }
+.col-1_2 {
+	@include respond-to(step1) {
+		float: none;
+		overflow: hidden;
+		width: auto;
+		margin-right: 510px;
+	}
+	@include respond-to(step2) {
+		margin-right: 330px;
+	}
+	@include respond-to(step3) {
+		width: 100%;
+		margin: 0;
+	}
+}
 .col-2 {
 	float: right;
 	width: 32%;
@@ -19,6 +34,17 @@
 }	
 .col-2_1 {
 	float: left;
+}
+.col-2_2 {
+	@include respond-to(step1) {
+		width: 490px
+	}
+	@include respond-to(step2) {
+		width: 320px;
+	}
+	@include respond-to(step3) {
+		width: 100%;
+	}
 }
 .col-3 {
 	float: left;
@@ -42,4 +68,35 @@
 	@include respond-to(step2) {
 		width: 99%;
 	}
+}
+.col-5 {
+	float: left;
+	width: 49%;
+	@include respond-to(step1) {
+		width: 100%;
+	}
+}
+.col-5_1 {
+	float: right;
+	width: 49%;
+	@include respond-to(step1) {
+		width: 100%;
+	}
+}
+.col-5_2 {
+ 	@include respond-to(step1) {
+ 		width: 49%;
+ 	}
+ 	@include respond-to(step3) {
+ 		width: 100%;
+ 	}
+}
+.col-5_3 {
+	float: right;
+	@include respond-to(step1) {
+ 		width: 49%;
+ 	}
+ 	@include respond-to(step3) {
+ 		width: 100%;
+ 	}
 }

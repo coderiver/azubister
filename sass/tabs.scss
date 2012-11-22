@@ -7,8 +7,14 @@
 	padding: 2px 0 0 1px;
 	@include box-shadow(rgba(0,0,0,0.3) 0px -3px 2px -2px inset);
 	overflow: hidden;
+	@include respond-to(step3) {
+		@include box-shadow(rgba(0,0,0,0.3) 3px 0 2px -2px inset);
+	}
 	li {
-		float: left;		
+		float: left;	
+		@include respond-to(step3) {
+			float: none;
+		}	
 	}
 	a {
 		display: block;
@@ -21,15 +27,42 @@
 		@include border-radius(3px 3px 0 0);
 		color: #37559a;
 		font-weight: bold;
-		@include respond-to(step4) {
-			padding: 0 8px;
-			font-size: 12px;
+		@include respond-to(step3) {
+			margin: 0;
+			@include box-shadow(rgba(0,0,0,0.3) 0 0 2px inset);
+			@include border-radius(0 3px 3px 0);
 		}
 	}
 	.active {
 		@include box-shadow(rgba(0,0,0,0.3) 0px -1px 2px);
 		background: #fff;
 		color: #22b5f4;
+		@include respond-to(step3) {
+			@include box-shadow(rgba(0,0,0,0.3) 0 0 2px inset);
+		}
+	}
+	.tabs__blue {
+		float: right;			
+		a {
+			position: relative;
+			margin: 0;
+			padding: 0 22px 0 12px;
+			background: #37559a;
+			color: #fff;
+			@include respond-to(step3) {
+				padding: 0 12px;
+			}
+		}		
+		i {
+			position: absolute;
+			top: 15px;
+			right: 9px;
+			@include sized-sprite($icons, arr7);
+		}
+		@include respond-to(step3) {
+			float: none;			
+			@include box-shadow(rgba(0,0,0,0.3) 0 0 2px inset);
+		}
 	}
 }
 .tabs__content {
@@ -93,10 +126,19 @@
 }
 .about__team {
 	overflow: hidden;
+	@include respond-to(step4) {
+		text-align: center;
+	}
 	li {
 		float: left;
 		width: 150px;
-		margin: 0 20px 35px 0;
+		margin: 0 20px 35px 0;		
+		@include respond-to(step4) {
+			float: none;
+			display: inline-block;
+			margin: 0 10px 20px 10px;
+			text-align: left;
+		}
 	}
 	img {
 		margin-bottom: 15px;
@@ -133,10 +175,19 @@
 .partners {
 	margin: 35px -30px 0 0;
 	overflow: hidden;
+	@include respond-to(step4) {
+		margin: 35px 0 0 0;
+		text-align: center;
+	}
 	li {
 		float: left;
 		width: 150px;
 		margin-right: 20px;
+		@include respond-to(step4) {
+			float: none;
+			display: inline-block;
+			margin: 0 10px;
+		}
 	}
 	img {
 		display: block;
@@ -196,46 +247,11 @@
 .company-any-info {
 	width: 66%;
 	ul {
-		margin: 10px 0 20px 0;
+		margin-top: 10px;
 	}
-	li {
-		padding-top: 19px;
-		margin-top: 19px;
-		border-top: 1px dotted #cfcfcf;
-		overflow: hidden;
-		&:first-child {
-			margin-top: 0px;
-			border: none;
-		}
+	@include respond-to(step2) {
+		width: 100%;
 	}
-	.h4 {		
-		margin-bottom: 10px;
-		font-weight: normal;
-		a {
-			color: #666666;
-		}
-	}
-}
-.company-any-info__pic {
-	position: relative;
-	float: left;
-	margin-right: 20px;
-	img, span {
-		display: block;
-	}
-	span {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		padding-right: 10px;
-		text-align: right;
-		height: 17px;
-		line-height: 17px;
-		background: rgba(102,102,102,0.7);
-		font-size: 9px;
-		color: #fff;
-	}	
 }
 /*company-places*/
 .company-places {

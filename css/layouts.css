@@ -19,58 +19,154 @@
   float: right;
 }
 
-/* line 13, ../sass/layouts.scss */
+@media only screen and (max-width: 1000px) {
+  /* line 13, ../sass/layouts.scss */
+  .col-1_2 {
+    float: none;
+    overflow: hidden;
+    width: auto;
+    margin-right: 510px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  /* line 13, ../sass/layouts.scss */
+  .col-1_2 {
+    margin-right: 330px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 13, ../sass/layouts.scss */
+  .col-1_2 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* line 28, ../sass/layouts.scss */
 .col-2 {
   float: right;
   width: 32%;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 13, ../sass/layouts.scss */
+  /* line 28, ../sass/layouts.scss */
   .col-2 {
     width: 100%;
   }
 }
 
-/* line 20, ../sass/layouts.scss */
+/* line 35, ../sass/layouts.scss */
 .col-2_1 {
   float: left;
 }
 
-/* line 23, ../sass/layouts.scss */
+@media only screen and (max-width: 1000px) {
+  /* line 38, ../sass/layouts.scss */
+  .col-2_2 {
+    width: 490px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  /* line 38, ../sass/layouts.scss */
+  .col-2_2 {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 38, ../sass/layouts.scss */
+  .col-2_2 {
+    width: 100%;
+  }
+}
+
+/* line 49, ../sass/layouts.scss */
 .col-3 {
   float: left;
   width: 32%;
   margin-right: 10%;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 23, ../sass/layouts.scss */
+  /* line 49, ../sass/layouts.scss */
   .col-3 {
     width: 42%;
     margin-right: 4%;
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 23, ../sass/layouts.scss */
+  /* line 49, ../sass/layouts.scss */
   .col-3 {
     width: 99%;
     margin-right: 0;
   }
 }
 
-/* line 36, ../sass/layouts.scss */
+/* line 62, ../sass/layouts.scss */
 .col-4 {
   float: left;
   width: 49%;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 36, ../sass/layouts.scss */
+  /* line 62, ../sass/layouts.scss */
   .col-4 {
     width: 50%;
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 36, ../sass/layouts.scss */
+  /* line 62, ../sass/layouts.scss */
   .col-4 {
     width: 99%;
+  }
+}
+
+/* line 72, ../sass/layouts.scss */
+.col-5 {
+  float: left;
+  width: 49%;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 72, ../sass/layouts.scss */
+  .col-5 {
+    width: 100%;
+  }
+}
+
+/* line 79, ../sass/layouts.scss */
+.col-5_1 {
+  float: right;
+  width: 49%;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 79, ../sass/layouts.scss */
+  .col-5_1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 86, ../sass/layouts.scss */
+  .col-5_2 {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 86, ../sass/layouts.scss */
+  .col-5_2 {
+    width: 100%;
+  }
+}
+
+/* line 94, ../sass/layouts.scss */
+.col-5_3 {
+  float: right;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 94, ../sass/layouts.scss */
+  .col-5_3 {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* line 94, ../sass/layouts.scss */
+  .col-5_3 {
+    width: 100%;
   }
 }
