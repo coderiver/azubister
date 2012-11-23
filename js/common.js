@@ -86,12 +86,12 @@ $('.company-places__filter-open').click(function() {
 //video popup
 $('.our-video a').click(function() {
 	video = $(this).attr('href');
-	$('.bg, .video-popup').fadeIn(200);
-	$('.video-popup__iframe').html(video);
+	$('.bg, .popup').fadeIn(200);
+	$('.popup__iframe').html(video);
 	return false;
 });
-$('.video-popup__close').click(function() {
-	$('.bg, .video-popup').fadeOut(200);
+$('.popup__close').click(function() {
+	$('.bg, .popup').fadeOut(200);
 });
 
 });

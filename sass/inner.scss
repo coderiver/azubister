@@ -693,11 +693,16 @@
 	border-top: 1px dotted #cfcfcf;
 	border-bottom: 1px dotted #cfcfcf;
 	font-size: 12px;
-	span {
+	i {
 		margin: 0 8px;		
+		font-style: normal;
 	}
 	b {
 		margin-right: 4px;
+	}
+	span {
+		position: relative;
+		color: $blue;
 	}
 }
 .job-info__apply {

@@ -261,6 +261,7 @@ table {
 		float: left;
 		width: 47%;	
 		height: 50px;
+		line-height: 50px;
 		padding-right: 3%;	
 		vertical-align: middle;
 		@include respond-to(step2) {
@@ -269,10 +270,8 @@ table {
 		}
 	}
 	a {
-		position: relative;
-		display: block;	
-		height: 50px;
-		line-height: 50px;	
+		display: inline-block;	
+		line-height: 1;	
 		padding-left: 65px;
 		vertical-align: middle;
 	}
@@ -283,39 +282,21 @@ table {
 	}
 	.nav-more__1 {i {@include sized-sprite($icons, nm1);}}
 	.nav-more__2 {i {@include sized-sprite($icons, nm2);}}
-	.nav-more__3 {
-		@extend %nav-more;
-		i {@include sized-sprite($icons, nm3);}
-	}
+	.nav-more__3 {i {@include sized-sprite($icons, nm3);}}
 	.nav-more__4 {i {@include sized-sprite($icons, nm4);}}
 	.nav-more__5 {i {@include sized-sprite($icons, nm5);}}
 	.nav-more__6 {i {@include sized-sprite($icons, nm6);}}
 	.nav-more__7 {i {@include sized-sprite($icons, nm7);}}
 	.nav-more__8 {i {@include sized-sprite($icons, nm8);}}
 	.nav-more__9 {i {@include sized-sprite($icons, nm9);}}
-	.nav-more__10 {
-		@extend %nav-more;
-		i {@include sized-sprite($icons, nm10);}
-	}
+	.nav-more__10 {i {@include sized-sprite($icons, nm10);}}
 	.nav-more__11 {i {@include sized-sprite($icons, nm11);}}
-	.nav-more__12 {
-		@extend %nav-more;
-		i {@include sized-sprite($icons, nm12);}
-	}
+	.nav-more__12 {i {@include sized-sprite($icons, nm12);}}
 	.nav-more__13 {i {@include sized-sprite($icons, nm13);}}
-	.nav-more__14 {
-		@extend %nav-more;
-		i {@include sized-sprite($icons, nm14);}
-	}
+	.nav-more__14 {i {@include sized-sprite($icons, nm14);}}
 	.nav-more__15 {i {@include sized-sprite($icons, nm15);}}
-	.nav-more__16 {
-		@extend %nav-more;
-		i {@include sized-sprite($icons, nm16);}
-	}
-	.nav-more__17 {
-		@extend %nav-more;
-		i {@include sized-sprite($icons, nm17);}
-	}
+	.nav-more__16 {i {@include sized-sprite($icons, nm16);}}
+	.nav-more__17 {i {@include sized-sprite($icons, nm17);}}
 	.active {
 		i {
 			filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
@@ -815,15 +796,11 @@ table {
 	background: rgba(0,0,0,0.5);
 	z-index: 100;
 }
-.video-popup {
+.popup {
 	display: none;
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 590px;
-	height: 345px;
-	margin: -170px 0 0 -295px;
-	border: 5px solid #fff;
+	top: 280px;
+	left: 50%;	
 	@include box-shadow(rgba(0,0,0,0.7) 0px 0px 10px);
 	background: #fff;
 	z-index: 150;
@@ -831,11 +808,14 @@ table {
 		width: 590px;
 		height: 345px;
 	}
+	.h3 {
+		color: $blue;
+	}
 }
-.video-popup__close {
+.popup__close {
 	position: absolute;
-	top: -23px;
-	right: -5px;
+	top: -17px;
+	right: 0;
 	width: 28px;
 	height: 18px;
 	background: #fff;
@@ -846,6 +826,131 @@ table {
 		top: 8px;
 		left: 9px;
 		@include sized-sprite($icons, close1);
+	}
+}
+/*popup_video*/
+.popup_video {
+	width: 590px;
+	height: 345px;
+	margin: 0 0 0 -295px;
+	padding: 5px;
+}
+/*popup_enter*/
+.popup_enter {
+	width: 300px;
+	padding: 17px 20px;
+	margin-left: -150px;
+	.h3 {
+		margin-bottom: 10px;
+	}
+	p {
+		margin-bottom: 15px;
+	}
+	input {
+		width: 284px;
+		height: 28px;
+		margin-bottom: 17px;
+		padding: 0 7px;
+		@include border-radius(2px);
+		@include box-shadow(#cfcfcf 0px 0px 5px inset);
+		border: 1px solid #cfcfcf;
+	}
+	.form-btn {
+		button {
+			padding: 0 19px 0 32px;
+			i {
+				left: 15px;
+			}
+		}		
+	}
+}
+/*popup_partners*/
+.popup_partners {
+	width: 490px;
+	padding: 20px;
+	margin-left: -245px;
+	img {
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+	p {
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+}
+/*popup_app*/
+.popup_app {
+	width: 470px;
+	margin-left: -235px;
+	padding: 17px 20px;
+	.h3 {
+		margin-bottom: 30px;
+	}	
+}
+.app-list {
+	overflow: hidden;
+	li {
+		float: left;
+		width: 155px;
+		margin-top: 15px;
+		a {
+			position: relative;
+			display: block;			
+			padding-top: 95px;
+			margin-bottom: 50px;
+			text-align: center;
+			font-weight: bold;
+		}
+		i {
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+.app-list__email {
+	i {
+		left: 35px;
+		@include sized-sprite($icons, app1);
+	}
+}
+.app-list__post {
+	i {
+		left: 30px;
+		@include sized-sprite($icons, app2);
+	}
+}
+.app-list__online {
+	i {
+		left: 36px;
+		@include sized-sprite($icons, app3);
+	}
+}
+.popup__attention {
+	position: relative;
+	height: 64px;
+	margin: 0 -20px -17px -20px;
+	line-height: 64px;
+	padding-left: 67px;
+	background: #f1f1f1;
+	font-size: 12px;
+	i {
+		position: absolute;
+		top: 13px;
+		left: 21px;
+		@include sized-sprite($icons, att);
+	}
+}
+.app-info {
+	margin-bottom: 35px;
+	b {
+		display: block;
+		margin-bottom: 20px;
+	}
+	ul {
+		margin-bottom: 25px;
+	}
+	li {
+		line-height: 1.5;
 	}
 }
 /*static*/
@@ -998,5 +1103,39 @@ table {
 		font-style: normal;
 		color: #c2c2c2;
 		font-size: 10px;
+	}
+}
+/*link-out*/
+.link-out {
+	position: relative;
+	border-bottom: 1px dotted #666666;
+	color: #666666;
+	i {
+		position: absolute;
+		top: 2px;
+		right: -16px;
+		@include sized-sprite($icons, link);
+	}
+}
+/*tooltip*/
+.tooltip {
+	position: absolute;
+	top: 38px;
+	left: 50%;
+	margin-left: -130px;
+	padding: 10px;
+	width: 240px;
+	background: #fff;
+	@include border-radius(5px);
+	border: 1px solid $blue;
+	em {
+		position: absolute;
+		top: -21px;
+		left: 50%;
+		margin-left: -20px;
+		@include sized-sprite($icons, arr9);
+	}
+	li {
+		line-height: 1.5;
 	}
 }
