@@ -64,6 +64,30 @@ table {
 .clr {
 	clear: both;
 }
+.bodytext {
+	ul, ol {
+		margin-bottom: 15px;
+	}
+	li {
+		position: relative;
+		padding-left: 15px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.5;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 0;
+			@include sized-sprite($icons, arr4);			
+		}	
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
 /*wrap*/
 .wrap {
 	width: 1000px;
@@ -638,8 +662,8 @@ table {
 		}
 	}
 }
-/*breadcrumps*/
-.breadcrumps {
+/*breadcrumbs*/
+.breadcrumbs {
 	margin: 0 0 24px 0;
 	overflow: hidden;
 	li {
@@ -1029,8 +1053,9 @@ table {
 .block-txt {
 	padding-bottom: 20px;
 	border-top: 1px dotted #cfcfcf;
-	.h3 {
+	.h3, .h2 {
 		padding: 20px 0;
+		font-size: 20px;
 	}
 }
 /*articles*/
@@ -1139,3 +1164,4 @@ table {
 		line-height: 1.5;
 	}
 }
+
